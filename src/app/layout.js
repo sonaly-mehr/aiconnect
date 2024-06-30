@@ -1,7 +1,18 @@
-import { Inter } from "next/font/google";
+import { Michroma, Roboto } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const michroma = Michroma({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-michroma"
+});
+
+const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-roboto"
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +22,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${michroma.variable} ${roboto.variable}`}>
+        <Navbar/>
+        {children}
+        </body>
     </html>
   );
 }

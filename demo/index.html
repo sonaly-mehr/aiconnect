@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js" itemtype="https://schema.org/WebPage" itemscope>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Monitoring Any Proces</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="./feed/index.html">
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="./comments/feed/index.html">
+			<script>document.documentElement.classList.remove( 'no-js' );</script>
+			<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":".\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.3"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍⬛","🐦​⬛")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel="stylesheet" id="bdt-uikit-css" href="./wp-content/plugins/bdthemes-element-pack-lite/assets/css/bdt-uikit.css?ver=3.17.0" media="all">
+<link rel="stylesheet" id="ep-helper-css" href="./wp-content/plugins/bdthemes-element-pack-lite/assets/css/ep-helper.css?ver=5.6.3" media="all">
+<style id="wp-emoji-styles-inline-css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<style id="classic-theme-styles-inline-css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--theme-palette-1: var(--global-palette1);--wp--preset--color--theme-palette-2: var(--global-palette2);--wp--preset--color--theme-palette-3: var(--global-palette3);--wp--preset--color--theme-palette-4: var(--global-palette4);--wp--preset--color--theme-palette-5: var(--global-palette5);--wp--preset--color--theme-palette-6: var(--global-palette6);--wp--preset--color--theme-palette-7: var(--global-palette7);--wp--preset--color--theme-palette-8: var(--global-palette8);--wp--preset--color--theme-palette-9: var(--global-palette9);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: var(--global-font-size-small);--wp--preset--font-size--medium: var(--global-font-size-medium);--wp--preset--font-size--large: var(--global-font-size-large);--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--larger: var(--global-font-size-larger);--wp--preset--font-size--xxlarge: var(--global-font-size-xxlarge);--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.4" media="all">
+<link rel="stylesheet" id="wp-components-css" href="./wp-includes/css/dist/components/style.min.css?ver=6.5.3" media="all">
+<link rel="stylesheet" id="lottiefiles-css-css" href="./wp-content/plugins/lottiefiles/src/../build/lottiefiles-frontend.css.css?ver=1827f92ff530924e3ad2" media="all">
+<link rel="stylesheet" id="rt-fontawsome-css" href="./wp-content/plugins/the-post-grid/assets/vendor/font-awesome/css/font-awesome.min.css?ver=7.7.3" media="all">
+<link rel="stylesheet" id="rt-tpg-css" href="./wp-content/plugins/the-post-grid/assets/css/thepostgrid.min.css?ver=7.7.3" media="all">
+<link rel="stylesheet" id="hfe-style-css" href="./wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.6.31" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="./wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.21.5" media="all">
+<link rel="stylesheet" id="swiper-css" href="./wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
+<link rel="stylesheet" id="elementor-post-6-css" href="./wp-content/uploads/elementor/css/post-6.css?ver=1716083991" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="./wp-content/uploads/elementor/css/global.css?ver=1716087959" media="all">
+<link rel="stylesheet" id="elementor-post-225-css" href="./wp-content/uploads/elementor/css/post-225.css?ver=1717057622" media="all">
+<link rel="stylesheet" id="elementor-post-213-css" href="./wp-content/uploads/elementor/css/post-213.css?ver=1716894766" media="all">
+<link rel="stylesheet" id="elementor-post-93-css" href="./wp-content/uploads/elementor/css/post-93.css?ver=1717057978" media="all">
+<link rel="stylesheet" id="kadence-global-css" href="./wp-content/themes/kadence/assets/css/global.min.css?ver=1.2.4" media="all">
+<style id="kadence-global-inline-css">/* Kadence Base CSS */
+:root{--global-palette1:#2B6CB0;--global-palette2:#215387;--global-palette3:#1A202C;--global-palette4:#2D3748;--global-palette5:#4A5568;--global-palette6:#718096;--global-palette7:#EDF2F7;--global-palette8:#F7FAFC;--global-palette9:#ffffff;--global-palette9rgb:255, 255, 255;--global-palette-highlight:var(--global-palette1);--global-palette-highlight-alt:var(--global-palette2);--global-palette-highlight-alt2:var(--global-palette9);--global-palette-btn-bg:var(--global-palette1);--global-palette-btn-bg-hover:var(--global-palette2);--global-palette-btn:var(--global-palette9);--global-palette-btn-hover:var(--global-palette9);--global-body-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";--global-heading-font-family:inherit;--global-primary-nav-font-family:inherit;--global-fallback-font:sans-serif;--global-display-fallback-font:sans-serif;--global-content-width:1290px;--global-content-narrow-width:842px;--global-content-edge-padding:1.5rem;--global-content-boxed-padding:2rem;--global-calc-content-width:calc(1290px - var(--global-content-edge-padding) - var(--global-content-edge-padding) );--wp--style--global--content-size:var(--global-calc-content-width);}.wp-site-blocks{--global-vw:calc( 100vw - ( 0.5 * var(--scrollbar-offset)));}:root body.kadence-elementor-colors{--e-global-color-kadence1:var(--global-palette1);--e-global-color-kadence2:var(--global-palette2);--e-global-color-kadence3:var(--global-palette3);--e-global-color-kadence4:var(--global-palette4);--e-global-color-kadence5:var(--global-palette5);--e-global-color-kadence6:var(--global-palette6);--e-global-color-kadence7:var(--global-palette9);--e-global-color-kadence8:var(--global-palette8);--e-global-color-kadence9:var(--global-palette7);}body{background:var(--global-palette8);}body, input, select, optgroup, textarea{font-weight:400;font-size:17px;line-height:1.6;font-family:var(--global-body-font-family);color:var(--global-palette4);}.content-bg, body.content-style-unboxed .site{background:var(--global-palette9);}h1,h2,h3,h4,h5,h6{font-family:var(--global-heading-font-family);}h1{font-weight:700;font-size:32px;line-height:1.5;color:var(--global-palette3);}h2{font-weight:700;font-size:28px;line-height:1.5;color:var(--global-palette3);}h3{font-weight:700;font-size:24px;line-height:1.5;color:var(--global-palette3);}h4{font-weight:700;font-size:22px;line-height:1.5;color:var(--global-palette4);}h5{font-weight:700;font-size:20px;line-height:1.5;color:var(--global-palette4);}h6{font-weight:700;font-size:18px;line-height:1.5;color:var(--global-palette5);}.entry-hero .kadence-breadcrumbs{max-width:1290px;}.site-container, .site-header-row-layout-contained, .site-footer-row-layout-contained, .entry-hero-layout-contained, .comments-area, .alignfull > .wp-block-cover__inner-container, .alignwide > .wp-block-cover__inner-container{max-width:var(--global-content-width);}.content-width-narrow .content-container.site-container, .content-width-narrow .hero-container.site-container{max-width:var(--global-content-narrow-width);}@media all and (min-width: 1520px){.wp-site-blocks .content-container  .alignwide{margin-left:-115px;margin-right:-115px;width:unset;max-width:unset;}}@media all and (min-width: 1102px){.content-width-narrow .wp-site-blocks .content-container .alignwide{margin-left:-130px;margin-right:-130px;width:unset;max-width:unset;}}.content-style-boxed .wp-site-blocks .entry-content .alignwide{margin-left:calc( -1 * var( --global-content-boxed-padding ) );margin-right:calc( -1 * var( --global-content-boxed-padding ) );}.content-area{margin-top:5rem;margin-bottom:5rem;}@media all and (max-width: 1024px){.content-area{margin-top:3rem;margin-bottom:3rem;}}@media all and (max-width: 767px){.content-area{margin-top:2rem;margin-bottom:2rem;}}@media all and (max-width: 1024px){:root{--global-content-boxed-padding:2rem;}}@media all and (max-width: 767px){:root{--global-content-boxed-padding:1.5rem;}}.entry-content-wrap{padding:2rem;}@media all and (max-width: 1024px){.entry-content-wrap{padding:2rem;}}@media all and (max-width: 767px){.entry-content-wrap{padding:1.5rem;}}.entry.single-entry{box-shadow:0px 15px 15px -10px rgba(0,0,0,0.05);}.entry.loop-entry{box-shadow:0px 15px 15px -10px rgba(0,0,0,0.05);}.loop-entry .entry-content-wrap{padding:2rem;}@media all and (max-width: 1024px){.loop-entry .entry-content-wrap{padding:2rem;}}@media all and (max-width: 767px){.loop-entry .entry-content-wrap{padding:1.5rem;}}button, .button, .wp-block-button__link, input[type="button"], input[type="reset"], input[type="submit"], .fl-button, .elementor-button-wrapper .elementor-button{box-shadow:0px 0px 0px -7px rgba(0,0,0,0);}button:hover, button:focus, button:active, .button:hover, .button:focus, .button:active, .wp-block-button__link:hover, .wp-block-button__link:focus, .wp-block-button__link:active, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active, .elementor-button-wrapper .elementor-button:hover, .elementor-button-wrapper .elementor-button:focus, .elementor-button-wrapper .elementor-button:active{box-shadow:0px 15px 25px -7px rgba(0,0,0,0.1);}.kb-button.kb-btn-global-outline.kb-btn-global-inherit{padding-top:calc(px - 2px);padding-right:calc(px - 2px);padding-bottom:calc(px - 2px);padding-left:calc(px - 2px);}@media all and (min-width: 1025px){.transparent-header .entry-hero .entry-hero-container-inner{padding-top:80px;}}@media all and (max-width: 1024px){.mobile-transparent-header .entry-hero .entry-hero-container-inner{padding-top:80px;}}@media all and (max-width: 767px){.mobile-transparent-header .entry-hero .entry-hero-container-inner{padding-top:80px;}}.entry-hero.page-hero-section .entry-header{min-height:200px;}
+/* Kadence Header CSS */
+@media all and (max-width: 1024px){.mobile-transparent-header #masthead{position:absolute;left:0px;right:0px;z-index:100;}.kadence-scrollbar-fixer.mobile-transparent-header #masthead{right:var(--scrollbar-offset,0);}.mobile-transparent-header #masthead, .mobile-transparent-header .site-top-header-wrap .site-header-row-container-inner, .mobile-transparent-header .site-main-header-wrap .site-header-row-container-inner, .mobile-transparent-header .site-bottom-header-wrap .site-header-row-container-inner{background:transparent;}.site-header-row-tablet-layout-fullwidth, .site-header-row-tablet-layout-standard{padding:0px;}}@media all and (min-width: 1025px){.transparent-header #masthead{position:absolute;left:0px;right:0px;z-index:100;}.transparent-header.kadence-scrollbar-fixer #masthead{right:var(--scrollbar-offset,0);}.transparent-header #masthead, .transparent-header .site-top-header-wrap .site-header-row-container-inner, .transparent-header .site-main-header-wrap .site-header-row-container-inner, .transparent-header .site-bottom-header-wrap .site-header-row-container-inner{background:transparent;}}.site-branding a.brand img{max-width:200px;}.site-branding a.brand img.svg-logo-image{width:200px;}.site-branding{padding:0px 0px 0px 0px;}.site-branding .site-title{font-weight:700;font-size:26px;line-height:1.2;color:var(--global-palette3);}#masthead, #masthead .kadence-sticky-header.item-is-fixed:not(.item-at-start):not(.site-header-row-container):not(.site-main-header-wrap), #masthead .kadence-sticky-header.item-is-fixed:not(.item-at-start) > .site-header-row-container-inner{background:#ffffff;}.site-main-header-inner-wrap{min-height:80px;}.header-navigation[class*="header-navigation-style-underline"] .header-menu-container.primary-menu-container>ul>li>a:after{width:calc( 100% - 1.2em);}.main-navigation .primary-menu-container > ul > li.menu-item > a{padding-left:calc(1.2em / 2);padding-right:calc(1.2em / 2);padding-top:0.6em;padding-bottom:0.6em;color:var(--global-palette5);}.main-navigation .primary-menu-container > ul > li.menu-item .dropdown-nav-special-toggle{right:calc(1.2em / 2);}.main-navigation .primary-menu-container > ul > li.menu-item > a:hover{color:var(--global-palette-highlight);}.main-navigation .primary-menu-container > ul > li.menu-item.current-menu-item > a{color:var(--global-palette3);}.header-navigation[class*="header-navigation-style-underline"] .header-menu-container.secondary-menu-container>ul>li>a:after{width:calc( 100% - 1.3em);}.secondary-navigation .secondary-menu-container > ul > li.menu-item > a{padding-left:calc(1.3em / 2);padding-right:calc(1.3em / 2);padding-top:0.6em;padding-bottom:0.6em;color:var(--global-palette5);}.secondary-navigation .primary-menu-container > ul > li.menu-item .dropdown-nav-special-toggle{right:calc(1.3em / 2);}.secondary-navigation .secondary-menu-container > ul > li.menu-item > a:hover{color:var(--global-palette-highlight);}.secondary-navigation .secondary-menu-container > ul > li.menu-item.current-menu-item > a{color:var(--global-palette3);}.header-navigation .header-menu-container ul ul.sub-menu, .header-navigation .header-menu-container ul ul.submenu{background:var(--global-palette3);box-shadow:0px 2px 13px 0px rgba(0,0,0,0.1);}.header-navigation .header-menu-container ul ul li.menu-item, .header-menu-container ul.menu > li.kadence-menu-mega-enabled > ul > li.menu-item > a{border-bottom:1px solid rgba(255,255,255,0.1);}.header-navigation .header-menu-container ul ul li.menu-item > a{width:200px;padding-top:1em;padding-bottom:1em;color:var(--global-palette8);font-size:12px;}.header-navigation .header-menu-container ul ul li.menu-item > a:hover{color:var(--global-palette9);background:var(--global-palette4);}.header-navigation .header-menu-container ul ul li.menu-item.current-menu-item > a{color:var(--global-palette9);background:var(--global-palette4);}.mobile-toggle-open-container .menu-toggle-open, .mobile-toggle-open-container .menu-toggle-open:focus{color:var(--global-palette5);padding:0.4em 0.6em 0.4em 0.6em;font-size:14px;}.mobile-toggle-open-container .menu-toggle-open.menu-toggle-style-bordered{border:1px solid currentColor;}.mobile-toggle-open-container .menu-toggle-open .menu-toggle-icon{font-size:20px;}.mobile-toggle-open-container .menu-toggle-open:hover, .mobile-toggle-open-container .menu-toggle-open:focus-visible{color:var(--global-palette-highlight);}.mobile-navigation ul li{font-size:14px;}.mobile-navigation ul li a{padding-top:1em;padding-bottom:1em;}.mobile-navigation ul li > a, .mobile-navigation ul li.menu-item-has-children > .drawer-nav-drop-wrap{color:var(--global-palette8);}.mobile-navigation ul li.current-menu-item > a, .mobile-navigation ul li.current-menu-item.menu-item-has-children > .drawer-nav-drop-wrap{color:var(--global-palette-highlight);}.mobile-navigation ul li.menu-item-has-children .drawer-nav-drop-wrap, .mobile-navigation ul li:not(.menu-item-has-children) a{border-bottom:1px solid rgba(255,255,255,0.1);}.mobile-navigation:not(.drawer-navigation-parent-toggle-true) ul li.menu-item-has-children .drawer-nav-drop-wrap button{border-left:1px solid rgba(255,255,255,0.1);}#mobile-drawer .drawer-header .drawer-toggle{padding:0.6em 0.15em 0.6em 0.15em;font-size:24px;}
+/* Kadence Footer CSS */
+.site-bottom-footer-inner-wrap{padding-top:30px;padding-bottom:30px;grid-column-gap:30px;}.site-bottom-footer-inner-wrap .widget{margin-bottom:30px;}.site-bottom-footer-inner-wrap .site-footer-section:not(:last-child):after{right:calc(-30px / 2);}</style>
+<link rel="stylesheet" id="kadence-header-css" href="./wp-content/themes/kadence/assets/css/header.min.css?ver=1.2.4" media="all">
+<link rel="stylesheet" id="kadence-content-css" href="./wp-content/themes/kadence/assets/css/content.min.css?ver=1.2.4" media="all">
+<link rel="stylesheet" id="kadence-footer-css" href="./wp-content/themes/kadence/assets/css/footer.min.css?ver=1.2.4" media="all">
+<link rel="stylesheet" id="elementor-icons-ekiticons-css" href="./wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.1.4" media="all">
+<link rel="stylesheet" id="ekit-widget-styles-css" href="./wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.1.4" media="all">
+<link rel="stylesheet" id="ekit-responsive-css" href="./wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.1.4" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMichroma%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSarpanch%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.5.3" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<script src="./wp-content/plugins/lottiefiles/src/../build/frontend-helper.js?ver=1827f92ff530924e3ad2" id="lottiefiles-block-frontend-js"></script>
+<script src="./wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="./wp-json/index.html">
+<link rel="alternate" type="application/json" href="./wp-json/wp/v2/pages/225/index.html">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.5.3">
+<link rel="canonical" href="./index.html">
+<link rel="shortlink" href="./index.html">
+<link rel="alternate" type="application/json+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=.%2F%2F">
+<link rel="alternate" type="text/xml+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=.%2F%2F#038;format=xml">
+
+		<script>
+
+			jQuery(window).on('elementor/frontend/init', function () {
+				var previewIframe = jQuery('#elementor-preview-iframe').get(0);
+
+				// Attach a load event listener to the preview iframe
+				jQuery(previewIframe).on('load', function () {
+					var tpg_selector = tpg_str_rev("nottub-tropmi-gpttr nottub-aera-noitces-dda-rotnemele");
+
+					var logo = ".//wp-content/plugins/the-post-grid";
+					var log_path = "/assets/images/icon-40x40.svg"; //tpg_str_rev("gvs.04x04-noci/segami/stessa/");
+
+					jQuery('<div class="' + tpg_selector + '" style="vertical-align: bottom;margin-left: 5px;"><img src="' + logo + log_path + '" alt="TPG"/><\/div>').insertBefore(".elementor-add-section-drag-title");
+				});
+
+			});
+		</script>
+		<style>:root {
+				--tpg-primary-color: #0d6efd;
+				--tpg-secondary-color: #0654c4;
+				--tpg-primary-light: #c4d0ff
+			}</style>
+
+		<meta name="generator" content="Elementor 3.21.5; features: e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}</style>
+					<style id="wp-custom-css">/* Reduce the height of the textarea */
+.wpcf7-textarea {
+    height: 100px; /* Adjust this value to your preference */
+}
+
+/* Reduce the width of the submit button */
+.wpcf7-submit {
+    width: 150px; /* Adjust this value to your preference */
+}
+
+/* Optional: Add some padding and styling to make the form look better */
+.wpcf7-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea,
+.wpcf7-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.wpcf7-form input[type="file"] {
+    padding: 5px;
+}
+
+.wpcf7-submit {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.wpcf7-submit:hover {
+    background-color: #005bb5;
+}
+
+
+
+
+
+/* Set border-radius for the panel slider items */
+.bdt-panel-slide-item {
+    border-radius: 20px; /* Adjust this value to your preference */
+	
+	
+    overflow: hidden; /* Ensure content within respects the border-radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+
+/* Additional styles for the images within the slider items to match the border-radius */
+.bdt-panel-slide-thumb-wrapper {
+    border-radius: 20px; /* Match the border-radius value here */
+    overflow: hidden; /* Ensure the images respect the border-radius */
+}
+
+
+/* Change color of the previous and next navigation icons */
+.bdt-navigation-prev i, 
+.bdt-navigation-next i {
+    color: #000000; /* Change this value to your preferred color */
+}
+
+/* Optional: Change color on hover */
+.bdt-navigation-prev:hover i, 
+.bdt-navigation-next:hover i {
+    color: #000000; /* Change this value to your preferred hover color */
+}</style>
+		</head>
+
+<body class="home page-template-default page page-id-225 wp-custom-logo wp-embed-responsive rttpg rttpg-7.7.3 radius-frontend rttpg-body-wrap ehf-header ehf-footer ehf-template-kadence ehf-stylesheet-kadence footer-on-bottom hide-focus-outline link-style-standard content-title-style-hide content-width-fullwidth content-style-unboxed content-vertical-padding-hide non-transparent-header mobile-non-transparent-header kadence-elementor-colors elementor-default elementor-kit-6 elementor-page elementor-page-225">
+<div id="wrapper" class="site wp-site-blocks">
+			<a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
+				<header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+			<p class="main-title bhf-hidden" itemprop="headline"><a href="./index.html" title="" rel="home"></a></p>
+					<div data-elementor-type="wp-post" data-elementor-id="213" class="elementor elementor-213">
+				<div class="elementor-element elementor-element-8283375 e-flex e-con-boxed e-con e-parent" data-id="8283375" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-df698d7 e-con-full e-flex e-con e-child" data-id="df698d7" data-element_type="container">
+				<div class="elementor-element elementor-element-611a9b9 elementor-widget elementor-widget-heading" data-id="611a9b9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 08-05-2024 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
+<h2 class="elementor-heading-title elementor-size-default">AI Connection</h2>		
+</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b72507d e-con-full e-flex e-con e-child" data-id="b72507d" data-element_type="container">
+				<div class="elementor-element elementor-element-b780ffe hfe-nav-menu__align-left hfe-submenu-icon-arrow hfe-submenu-animation-none hfe-link-redirect-child hfe-nav-menu__breakpoint-tablet elementor-widget elementor-widget-navigation-menu" data-id="b780ffe" data-element_type="widget" data-settings="{&quot;padding_horizontal_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;dropdown_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;width_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;220&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="navigation-menu.default">
+				<div class="elementor-widget-container">
+						<div class="hfe-nav-menu hfe-layout-horizontal hfe-nav-menu-layout horizontal hfe-pointer__none" data-layout="horizontal">
+				<div role="button" class="hfe-nav-menu__toggle elementor-clickable">
+					<span class="screen-reader-text">Menu</span>
+					<div class="hfe-nav-menu-icon">
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-align-justify" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"></path></svg>					</div>
+				</div>
+				<nav class="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow" data-toggle-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-fas-align-justify&quot; viewBox=&quot;0 0 448 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-close-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-far-window-close&quot; viewBox=&quot;0 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-full-width="yes">
+					<ul id="menu-1-b780ffe" class="hfe-nav-menu">
+<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home parent hfe-creative-menu"><a href="./index.html" class="hfe-menu-item">Home</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="./solutions/index.html" class="hfe-menu-item">Solutions</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="#about" class="hfe-menu-item">About</a></li>
+<li id="menu-item-166" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="#contact" class="hfe-menu-item">Contact</a></li>
+<li id="menu-item-396" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="#ser" class="hfe-menu-item">Services</a></li>
+</ul> 
+				</nav>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</header>
+
+	
+	<div id="inner-wrap" class="wrap hfeed kt-clear">
+		<div id="primary" class="content-area">
+	<div class="content-container site-container">
+		<main id="main" class="site-main" role="main">
+						<div class="content-wrap">
+				<article id="post-225" class="entry content-bg single-entry post-225 page type-page status-publish hentry">
+	<div class="entry-content-wrap">
+		
+<div class="entry-content single-content">
+			<div data-elementor-type="wp-page" data-elementor-id="225" class="elementor elementor-225">
+				<div class="elementor-element elementor-element-98ddd6e e-con-full e-flex e-con e-parent" data-id="98ddd6e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;.\/wp-content\/uploads\/2024\/05\/WhatsApp-Video-2024-05-20-at-21.38.27-7.mp4&quot;}">
+		<div class="elementor-background-video-container elementor-hidden-phone">
+							<video class="elementor-background-video-hosted elementor-html5-video" autoplay muted playsinline loop></video>
+					</div>		<div class="elementor-element elementor-element-95a452a elementor-widget elementor-widget-heading" data-id="95a452a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+<span data-metadata="<!--(figmeta)eyJmaWxlS2V5IjoiNTdVVjVzVjYxWUxwMUd1cFg1NVl5cyIsInBhc3RlSUQiOjE2MzA3NTkzNDgsImRhdGFUeXBlIjoic2NlbmUifQo=(/figmeta)-->"></span><span data-buffer="<!--(figma)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(/figma)-->"></span>Monitoring <br>Any Process <br>for Your <br>Business</h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-243129e e-con-full e-flex e-con e-child" data-id="243129e" data-element_type="container">
+				<div class="elementor-element elementor-element-32bd133 elementor-widget__width-initial elementor-widget elementor-widget-elementskit-lottie" data-id="32bd133" data-element_type="widget" data-widget_type="elementskit-lottie.default">
+				<div class="elementor-widget-container">
+			<div class="ekit-wid-con"></div>		</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-aa3fea3 e-flex e-con-boxed e-con e-parent" data-id="aa3fea3" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2bb39ae elementor-widget elementor-widget-heading" data-id="2bb39ae" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Our Services </h2>		</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-62155eb e-flex e-con-boxed e-con e-parent" data-id="62155eb" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b67f92b bdt-navigation-type-arrows bdt-carousel-style-carousel elementor-widget elementor-widget-bdt-panel-slider" data-id="b67f92b" data-element_type="widget" id="ser" data-settings="{&quot;columns&quot;:&quot;3&quot;,&quot;columns_tablet&quot;:&quot;2&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="bdt-panel-slider.default">
+				<div class="elementor-widget-container">
+					<div class="bdt-arrows-align-center bdt-panel-slider bdt-skin-default" data-settings="{&quot;autoplay&quot;:{&quot;delay&quot;:5000},&quot;loop&quot;:true,&quot;speed&quot;:500,&quot;slidesPerView&quot;:1,&quot;slidesPerGroup&quot;:1,&quot;spaceBetween&quot;:35,&quot;effect&quot;:&quot;carousel&quot;,&quot;breakpoints&quot;:{&quot;767&quot;:{&quot;slidesPerView&quot;:2,&quot;spaceBetween&quot;:35,&quot;slidesPerGroup&quot;:1},&quot;1023&quot;:{&quot;slidesPerView&quot;:3,&quot;spaceBetween&quot;:35,&quot;slidesPerGroup&quot;:1}},&quot;navigation&quot;:{&quot;nextEl&quot;:&quot;#bdt-panel-slider-b67f92b .bdt-navigation-next&quot;,&quot;prevEl&quot;:&quot;#bdt-panel-slider-b67f92b .bdt-navigation-prev&quot;},&quot;pagination&quot;:{&quot;el&quot;:&quot;#bdt-panel-slider-b67f92b .swiper-pagination&quot;,&quot;type&quot;:&quot;&quot;,&quot;clickable&quot;:&quot;true&quot;,&quot;dynamicBullets&quot;:false},&quot;scrollbar&quot;:{&quot;el&quot;:&quot;#bdt-panel-slider-b67f92b .swiper-scrollbar&quot;,&quot;hide&quot;:&quot;true&quot;},&quot;coverflowEffect&quot;:{&quot;rotate&quot;:50,&quot;stretch&quot;:0,&quot;depth&quot;:100,&quot;modifier&quot;:1,&quot;slideShadows&quot;:true}}" id="bdt-panel-slider-b67f92b" data-widget-settings="{&quot;id&quot;:&quot;#bdt-panel-slider-b67f92b&quot;,&quot;mouseInteractivity&quot;:false}">
+			<div class="swiper-carousel swiper">
+				<div class="swiper-wrapper">
+					
+											<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/12.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										All Infrastructure Process Connectivity from Anywhere									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<ul>
+<li>The types of sensors typically used</li>
+<li>Pump Performance Sensors</li>
+<li>Dynamic Fluid Processes sensors</li>
+<li>Water Quality Sensors</li>
+<li>Ancillary Systems in Plant Sensors</li>
+</ul>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/LOW-1.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Mobile Connectivity on Cell Phone, Tablets, Laptop									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										I am item content. Click edit button to change this text.									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/leed-1.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Achieve sustainability through LEED and/or WELL certifications									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										I am item content. Click edit button to change this text.									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/11.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Environmental Monitoring									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<p>Connect AC units from all major manufacturers to<br>KNX, Modbus, BACnet etc. with ready-made AC<br>communication interfaces.</p>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/20240327_225907-1.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Wastewater Solutions									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<ul>
+<li>Wastewater facilities use significant amounts of energy and are full of assets that are difficult, disruptive and hazardous to access and maintain.</li>
+<li>Pump downtime can cause significant disruption, production loss, and may even cause damage to the pump and other equipment – shortening lifespans and increasing maintenance costs.</li>
+<li>Wastewater Facility IoT solution could enable energy use reduction and implement intelligent maintenance schedules &amp; improve the uptime of the assets</li>
+</ul>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/20240327_230056-1.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Storm Water Solutions									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<ul><li>Enable smart grid communication between industrial<br>devices and energy distribution equipment.</li></ul>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/5.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Potable Water Solutions									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<ul><li>Make sure your generator is ready to start when<br>needed — No matter which brand of generator or<br>control panel you are using.</li></ul>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/20240327_225323.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Other Solutions									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<ul><li>Enable building equipment (HVAC, electricity, lighting,<br>fire, access controls, escalators etc.) to communicate<br>with building systems.</li></ul>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/div.card-image-wrp.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Connectivity for Pump Stations									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<ul><li>Wireless connectivity, safety, remote access and more<br>for Automated Guided Vehicles (AGVs) and<br>Autonomous Mobile Robots (AMRs).</li></ul>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/7.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Connectivity Water/Wastewater Plants									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<p>Enable network connectivity, wireless communication,<br>remote access and monitoring and much more for<br>water applications.</p>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/9.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Collaborative Troubleshooting									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<ul><li>Use state of the art networking tools and<br>competences to fix network problems and, even<br>better, prevent your network from going down.</li></ul>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/12.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Operations Consolidation									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<ul><li>A food processing plant contains many different<br>machines and systems. HMS solutions enable them to<br>communicate in several ways.</li></ul>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+												<div class="bdt-panel-slide-item swiper-slide bdt-transition-toggle">
+
+							<div class="bdt-panel-slide-thumb-wrapper">
+								<div class="bdt-panel-slide-thumb bdt-background-cover" data-depth="0.2" style="background-image: url(./wp-content/uploads/2024/05/13.png);"></div>
+							</div>
+							<div class="bdt-panel-slide-desc bdt-position-bottom-left bdt-position-z-index">
+
+																	<h2 class="bdt-panel-slide-title bdt-transition-slide-bottom">
+										Predictive/Preventive Maintenance Matters									</h2>
+								
+																	<div class="bdt-panel-slide-text bdt-transition-slide-bottom">
+										<ul>
+<li>Having a preventive maintenance (PM) plan will reduce how often full replacement is necessary.</li>
+<li>Since each industrial fluid system is unique, the PM schedule should reflect that reality.</li>
+<li>With suitable monitoring tools PM becomes an easy task.</li>
+</ul>									</div>
+								
+																											<a class="bdt-panel-slide-link bdt-transition-slide-bottom " href="#">
+											<span>
+												Read More											</span>
+																					</a>
+									
+								
+							</div>
+
+															<div class="bdt-transition-fade bdt-position-cover bdt-overlay bdt-overlay-gradient"></div>
+													</div>
+						
+							</div>
+				</div>
+
+											<div class="bdt-position-z-index bdt-position-center bdt-visible@m">
+				<div class="bdt-arrows-container bdt-slidenav-container">
+					<div class="bdt-navigation-prev bdt-slidenav-previous bdt-icon bdt-slidenav">
+						<i class="ep-icon-arrow-left-0" aria-hidden="true"></i>
+					</div>
+					<div class="bdt-navigation-next bdt-slidenav-next bdt-icon bdt-slidenav">
+						<i class="ep-icon-arrow-right-0" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+
+		</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-e1bacc6 e-flex e-con-boxed e-con e-parent" data-id="e1bacc6" data-element_type="container" id="ser">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9c55cba elementor-widget elementor-widget-heading" data-id="9c55cba" data-element_type="widget" id="about" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">About Us</h2>		</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5fa09b8 bdt-backdrop-filter-yes e-flex e-con-boxed e-con e-parent" data-id="5fa09b8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-cdef321 e-con-full e-flex e-con e-child" data-id="cdef321" data-element_type="container">
+		<div class="elementor-element elementor-element-a8a80f5 e-flex e-con-boxed e-con e-child" data-id="a8a80f5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;.\/wp-content\/uploads\/2024\/05\/WhatsApp-Video-2024-05-20-at-21.39.15.mp4&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-background-video-container elementor-hidden-phone">
+							<video class="elementor-background-video-hosted elementor-html5-video" autoplay muted playsinline loop></video>
+					</div>			</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6e96045 e-con-full e-flex e-con e-child" data-id="6e96045" data-element_type="container">
+				<div class="elementor-element elementor-element-ed904ce elementor-widget elementor-widget-heading" data-id="ed904ce" data-element_type="widget" id="ser" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Who We Are..........</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3b6a9f7 elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="3b6a9f7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 08-05-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Welcome to AIConnection, where we bring over 26 years of unparalleled expertise in Environmental Engineering to the forefront of technological innovation. At AIConnection, we are dedicated to providing comprehensive solutions that merge advanced environmental engineering practices with cutting-edge process monitoring & control. </p>						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f599f87 e-flex e-con-boxed e-con e-parent" data-id="f599f87" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3f7d226 e-con-full e-flex e-con e-child" data-id="3f7d226" data-element_type="container">
+				<div class="elementor-element elementor-element-3e8299e elementor-widget elementor-widget-heading" data-id="3e8299e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Our Commitment</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-072fdf1 elementor-widget elementor-widget-text-editor" data-id="072fdf1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>At AIConnection, we believe that the future of Environmental Engineering lies in the seamless integration of advanced technology and traditional engineering principles. Our commitment is to lead this evolution by offering next-generation solutions that are both innovative and practical. We are dedicated to helping our clients achieve their environmental and operational goals through intelligent, data-driven process control.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a386187 e-con-full e-flex e-con e-child" data-id="a386187" data-element_type="container">
+		<div class="elementor-element elementor-element-8941d4d e-flex e-con-boxed e-con e-child" data-id="8941d4d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;.\/wp-content\/uploads\/2024\/05\/backVideo.mp4&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-background-video-container elementor-hidden-phone">
+							<video class="elementor-background-video-hosted elementor-html5-video" autoplay muted playsinline loop></video>
+					</div>			</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-70c13ae e-flex e-con-boxed e-con e-parent" data-id="70c13ae" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-146bda4 elementor-widget elementor-widget-heading" data-id="146bda4" data-element_type="widget" id="contact" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Contact Us</h2>		</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7b6f85b e-con-full e-flex e-con e-parent" data-id="7b6f85b" data-element_type="container" id="about" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-5e1f148 e-con-full e-flex e-con e-child" data-id="5e1f148" data-element_type="container">
+				<div class="elementor-element elementor-element-a487615 elementor-widget elementor-widget-heading" data-id="a487615" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Get in Touch</h2>		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0898a70 elementor-widget__width-initial elementor-widget elementor-widget-shortcode" data-id="0898a70" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode">
+<div class="wpcf7 no-js" id="wpcf7-f150-p225-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response">
+<p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul>
+</div>
+<form action="/aiconnect/?simply_static_page=2879#wpcf7-f150-p225-o1" method="post" class="wpcf7-form init" aria-label="Contact form" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="150">
+<input type="hidden" name="_wpcf7_version" value="5.9.4">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f150-p225-o1">
+<input type="hidden" name="_wpcf7_container_post" value="225">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+</div>
+<p><label> Your name<br>
+<span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true" aria-invalid="false" value="" type="text" name="your-name"></span> </label>
+</p>
+<p><label> Your email<br>
+<span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" autocomplete="email" aria-required="true" aria-invalid="false" value="" type="email" name="your-email"></span> </label>
+</p>
+<p><label> Subject<br>
+<span class="wpcf7-form-control-wrap" data-name="your-subject"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" value="" type="text" name="your-subject"></span> </label>
+</p>
+<p><label> Your message (optional)<br>
+<span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="your-message"></textarea></span> </label>
+</p>
+<p><label> Attach Your Document (optional)<br>
+<span class="wpcf7-form-control-wrap" data-name="file-176"><input size="40" class="wpcf7-form-control wpcf7-file" accept=".doc" aria-invalid="false" type="file" name="file-176"></span> </label>
+</p>
+<p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Submit">
+</p>
+<div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4c7eb93 e-flex e-con-boxed e-con e-parent" data-id="4c7eb93" data-element_type="container">
+					<div class="e-con-inner">
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-c1c3867 e-flex e-con-boxed e-con e-parent" data-id="c1c3867" data-element_type="container">
+					<div class="e-con-inner">
+					</div>
+				</div>
+				</div>
+		</div>
+<!-- .entry-content -->
+	</div>
+</article><!-- #post-225 -->
+
+			</div>
+					</main><!-- #main -->
+			</div>
+</div>
+<!-- #primary -->
+	</div>
+<!-- #inner-wrap -->
+			<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
+			<div class="footer-width-fixer">		<div data-elementor-type="wp-post" data-elementor-id="93" class="elementor elementor-93">
+				<div class="elementor-element elementor-element-5559222 e-flex e-con-boxed e-con e-parent" data-id="5559222" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-cc9eada e-con-full e-flex e-con e-child" data-id="cc9eada" data-element_type="container">
+				<div class="elementor-element elementor-element-cd80b98 elementor-widget elementor-widget-heading" data-id="cd80b98" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default"></h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1b73a8d elementor-widget__width-initial hfe-nav-menu__align-left hfe-submenu-icon-arrow hfe-link-redirect-child hfe-nav-menu__breakpoint-tablet elementor-widget elementor-widget-navigation-menu" data-id="1b73a8d" data-element_type="widget" data-settings="{&quot;padding_horizontal_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;dropdown_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;padding_horizontal_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="navigation-menu.default">
+				<div class="elementor-widget-container">
+						<div class="hfe-nav-menu hfe-layout-vertical hfe-nav-menu-layout vertical" data-layout="vertical">
+				<div role="button" class="hfe-nav-menu__toggle elementor-clickable">
+					<span class="screen-reader-text">Menu</span>
+					<div class="hfe-nav-menu-icon">
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-align-justify" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"></path></svg>					</div>
+				</div>
+				<nav class="hfe-nav-menu__layout-vertical hfe-nav-menu__submenu-arrow" data-toggle-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-fas-align-justify&quot; viewBox=&quot;0 0 448 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-close-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-far-window-close&quot; viewBox=&quot;0 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-full-width="yes">
+					<ul id="menu-1-1b73a8d" class="hfe-nav-menu">
+<li id="menu-item-580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-225 current_page_item parent hfe-creative-menu"><a href="./index.html" class="hfe-menu-item"></a></li>
+</ul> 
+				</nav>
+			</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-480d70e e-con-full e-flex e-con e-child" data-id="480d70e" data-element_type="container">
+				<div class="elementor-element elementor-element-11a767e elementor-widget elementor-widget-heading" data-id="11a767e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default"></h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b75a639 elementor-widget elementor-widget-heading" data-id="b75a639" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-heading-title elementor-size-default">Phone No</div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-49f55c3 elementor-widget elementor-widget-heading" data-id="49f55c3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">6043582900</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3d426cb elementor-widget elementor-widget-heading" data-id="3d426cb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-heading-title elementor-size-default">Email</div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9189c87 elementor-widget elementor-widget-heading" data-id="9189c87" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">admin@aiconnection.ca</h2>		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ff8b46c e-con-full e-flex e-con e-child" data-id="ff8b46c" data-element_type="container">
+				<div class="elementor-element elementor-element-2aaeecc elementor-widget elementor-widget-heading" data-id="2aaeecc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"></h2>		</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-143b644 e-flex e-con-boxed e-con e-parent" data-id="143b644" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-a75ee99 elementor-widget elementor-widget-copyright" data-id="a75ee99" data-element_type="widget" data-settings="{&quot;align&quot;:&quot;center&quot;}" data-widget_type="copyright.default">
+				<div class="elementor-widget-container">
+					<div class="hfe-copyright-wrapper">
+							<span>Copyright © 2024  | Powered by AIConnection</span>
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		</div>		</footer>
+	</div>
+<!-- #wrapper -->
+
+			<script>document.documentElement.style.setProperty('--scrollbar-offset', window.innerWidth - document.documentElement.clientWidth + 'px' );</script>
+						<script type="text/javascript">const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );</script>
+			<link rel="stylesheet" id="hfe-widgets-style-css" href="./wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.31" media="all">
+<link rel="stylesheet" id="ep-font-css" href="./wp-content/plugins/bdthemes-element-pack-lite/assets/css/ep-font.css?ver=5.6.3" media="all">
+<link rel="stylesheet" id="ep-panel-slider-css" href="./wp-content/plugins/bdthemes-element-pack-lite/assets/css/ep-panel-slider.css?ver=5.6.3" media="all">
+<script src="./wp-content/plugins/lottiefiles/src/../build/lottiefiles-player.js" id="lottieFilesLocalPlayer-js"></script>
+<script src="./wp-content/plugins/lottiefiles/src/../build/lottiefiles-interactivity.js" id="lottieFilesInteractivityCDN-js"></script>
+<script src="./wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.4" id="swv-js"></script>
+<script id="contact-form-7-js-extra">var wpcf7 = {"api":{"root":".\/\/wp-json\/","namespace":"contact-form-7\/v1"}};</script>
+<script src="./wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.4" id="contact-form-7-js"></script>
+<script id="kadence-navigation-js-extra">var kadenceConfig = {"screenReader":{"expand":"Child menu","expandOf":"Child menu of","collapse":"Child menu","collapseOf":"Child menu of"},"breakPoints":{"desktop":"1024","tablet":768},"scrollOffset":"0"};</script>
+<script src="./wp-content/themes/kadence/assets/js/navigation.min.js?ver=1.2.4" id="kadence-navigation-js" async></script>
+<script src="./wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.1.4" id="elementskit-framework-js-frontend-js"></script>
+<script id="elementskit-framework-js-frontend-js-after">var elementskit = {
+			resturl: './/wp-json/elementskit/v1/',
+		}</script>
+<script src="./wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.1.4" id="ekit-widget-scripts-js"></script>
+<script src="./wp-content/plugins/header-footer-elementor/inc/js/frontend.js?ver=1.6.31" id="hfe-frontend-js-js"></script>
+<script src="./wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script src="./wp-content/plugins/bdthemes-element-pack-lite/assets/vendor/js/parallax.min.js" id="bdt-parallax-js"></script>
+<script id="bdt-uikit-js-extra">var element_pack_ajax_login_config = {"ajaxurl":".\/\/wp-admin\/admin-ajax.php","language":"en","loadingmessage":"Sending user info, please wait...","unknownerror":"Unknown error, make sure access is correct!"};
+var ElementPackConfig = {"ajaxurl":".\/\/wp-admin\/admin-ajax.php","nonce":"1830ef8e0b","data_table":{"language":{"lengthMenu":"Show _MENU_ Entries","info":"Showing _START_ to _END_ of _TOTAL_ entries","search":"Search :","paginate":{"previous":"Previous","next":"Next"}}},"contact_form":{"sending_msg":"Sending message please wait...","captcha_nd":"Invisible captcha not defined!","captcha_nr":"Could not get invisible captcha response!"},"mailchimp":{"subscribing":"Subscribing you please wait..."},"search":{"more_result":"More Results","search_result":"SEARCH RESULT","not_found":"not found"},"elements_data":{"sections":[],"columns":[],"widgets":[]}};</script>
+<script src="./wp-content/plugins/bdthemes-element-pack-lite/assets/js/bdt-uikit.min.js?ver=3.17.0" id="bdt-uikit-js"></script>
+<script src="./wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.5" id="elementor-webpack-runtime-js"></script>
+<script src="./wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.5" id="elementor-frontend-modules-js"></script>
+<script src="./wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="./wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.21.5","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"container_grid":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"e_lazyload":true},"urls":{"assets":".\/\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":225,"title":"Monitoring%20Any%20Process%20for%20your%20business","excerpt":"","featuredImage":false}};</script>
+<script src="./wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.5" id="elementor-frontend-js"></script>
+<script src="./wp-content/plugins/bdthemes-element-pack-lite/assets/js/modules/ep-panel-slider.min.js?ver=5.6.3" id="ep-panel-slider-js"></script>
+<script src="./wp-content/plugins/bdthemes-element-pack-lite/assets/js/common/helper.min.js?ver=5.6.3" id="element-pack-helper-js"></script>
+<script src="./wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.1.4" id="animate-circle-js"></script>
+<script id="elementskit-elementor-js-extra">var ekit_config = {"ajaxurl":".\/\/wp-admin\/admin-ajax.php","nonce":"96d9062851"};</script>
+<script src="./wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.1.4" id="elementskit-elementor-js"></script>
+<script src="./wp-content/plugins/elementskit-lite/widgets/lottie/assets/js/lottie.min.js?ver=3.1.4" id="lottie-js"></script>
+<script src="./wp-content/plugins/elementskit-lite/widgets/lottie/assets/js/lottie.init.js?ver=3.1.4" id="lottie-init-js"></script>
+</body>
+</html>
