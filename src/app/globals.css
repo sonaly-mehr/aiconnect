@@ -9,19 +9,27 @@ body{
 html{
   scroll-behavior: smooth;
 }
+:focus{
+  outline: none;
+}
 .heading{
-  @apply font-michroma font-semibold text-blue text-3xl
+  @apply font-michroma font-semibold text-darkBlue text-3xl
 }
 .nav-links li a{
   @apply font-medium font-roboto text-base text-[#626262] capitalize
 }
-
+.label{
+  @apply text-darkBlue text-base font-roboto font-medium
+}
+.input{
+  @apply w-full py-3 px-3 border border-solid border-[#d1d1d1] rounded-lg
+}
 .flipper-container{
   position:relative;
-  margin:35px auto;
+  margin:auto;
   perspective:1000;
   width:100%;
-  height:250px;
+  height:380px;
   overflow: hidden;
 }
 .linear-bg::before{
@@ -61,3 +69,21 @@ html{
   background-color:#498CA8;
   border-radius: 12px;
 }
+.about-bg{
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #DBDBDB 0%, #FDFCFC 100%);
+  background-attachment: fixed;
+}
+/* .slick-prev, .slick-next{
+  z-index: 10;
+}
+.slick-prev::before, .slick-next::before {
+  font-size: 0px !important
+}
+.slick-slide{
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+/* .service1{
+  background-image: url("../../public/assets/service1.jpg");
+} */

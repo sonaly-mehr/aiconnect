@@ -18,10 +18,12 @@ module.exports = {
       },
       fontFamily: {
         michroma: ["var(--font-michroma)"],
-        roboto: ["var(--font-roboto)"]
+        roboto: ["var(--font-roboto)"],
+        inter: ["var(--font-inter)"]
       },
       colors: {
         blue: "#498CA8",
+        darkBlue: "#021C55",
         gray: "#F5F5F5",
       },
     },
