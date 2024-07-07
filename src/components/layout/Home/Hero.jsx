@@ -20,7 +20,7 @@ const Hero = () => {
             autoPlay={true}
             muted={true}
             loop={true}
-            className="absolute w-auto h-auto min-w-full min-h-full object-none -z-[100] top-1/2 left-1/2 -translate-x-1/2 lg:left-[15%] -translate-y-1/2"
+            className="absolute w-auto h-auto min-w-full min-h-full object-none -z-[100] top-1/2 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[15%] -translate-y-1/2"
           >
             <source src="/assets/hero-vid.mp4" type="video/mp4" />
           </video>
