@@ -126,12 +126,12 @@ const Services = () => {
     },
   ];
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-    >
+    // <motion.div
+    //   variants={staggerContainer}
+    //   initial="hidden"
+    //   whileInView="show"
+    //   viewport={{ once: true, amount: 0.25 }}
+    // >
       <div className="container mx-auto pt-14 lg:pt-24 pb-10 lg:pb-16" id="solutions">
         <h4 className="heading mb-6 lg:mb-12 text-center">Our Solutions</h4>
 
@@ -164,16 +164,16 @@ const Services = () => {
       </Slider> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10">
           {services?.map((service, index) => (
-            <motion.div
-              variants={fadeIn(
-                "right",
-                "spring",
-                index * 0.5,
-                0.75
-              )}
-              key={index}
-            >
-              <div class="flipper-container cursor-pointer rounded-xl">
+            // <motion.div
+            //   variants={fadeIn(
+            //     "right",
+            //     "spring",
+            //     index * 0.5,
+            //     0.75
+            //   )}
+            //   key={index}
+            // >
+              <div class="flipper-container cursor-pointer rounded-xl" key={index}>
                 <div class="flip">
                   <div class="front face text-center">
                     <div
@@ -201,10 +201,10 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+
           ))}
         </div>
-
+            {/* </motion.div> */}
         <div className="mt-10 lg:w-[70%]">
           <div className="">
             <h4 className="mb-3 font-geometria capitalize text-xl lg:text-2xl text-blue font-medium">
@@ -229,7 +229,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    // </motion.div>
   );
 };
 
