@@ -13,7 +13,7 @@ const Contact = () => {
     viewport={{ once: true, amount: 0.25 }}
     className=""
   >
-    <div className="container pt-20 pb-28">
+    <div className="container pt-20 pb-28" id="contact">
       <div className="flex   shadow-[0px_2px_10px_1px_#cbcbcb]">
         <div className="basis-[60%] bg-gray p-10">
         <motion.div
@@ -60,7 +60,7 @@ const Contact = () => {
             <div className="mt-8">
               <button
                 type="submit"
-                className="bg-darkBlue text-white font-roboto font-semibold text-lg px-10 py-2.5 rounded-lg"
+                className="bg-darkBlue text-white font-geometria font-medium uppercase text-base px-10 py-2.5 rounded-lg"
               >
                 Submit
               </button>

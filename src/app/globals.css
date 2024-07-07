@@ -12,14 +12,20 @@ html{
 :focus{
   outline: none;
 }
+.container{
+  @apply w-[90%] mx-auto
+}
 .heading{
-  @apply font-michroma font-semibold text-darkBlue text-3xl
+  @apply  text-[22px] lg:text-[28px] lg:leading-[36px] font-bowler text-dark uppercase
+}
+.nav-links li{
+  @apply cursor-pointer
 }
 .nav-links li a{
-  @apply font-medium font-roboto text-base text-[#626262] capitalize
+  @apply  font-geometria font-medium  text-base text-[#a2a5ad] capitalize cursor-pointer
 }
 .label{
-  @apply text-darkBlue text-base font-roboto font-medium
+  @apply text-dark text-sm  font-geometria font-light
 }
 .input{
   @apply w-full py-3 px-3 border border-solid border-[#d1d1d1] rounded-lg
@@ -32,6 +38,18 @@ html{
   height:380px;
   overflow: hidden;
 }
+.card-overley::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(128, 198, 243, 0.4)
+}
+
 .linear-bg::before{
   content: '';
   position: absolute;
@@ -64,14 +82,14 @@ html{
   /* display: block; */
   transform: rotateY(180deg);
   box-sizing: border-box;
-  color: #fff;
+  color: #485059;
   text-align: center;
-  background-color:#498CA8;
+  background-color:#F7F7F9;
   border-radius: 12px;
 }
 .about-bg{
   background-color: transparent;
-  background-image: linear-gradient(180deg, #DBDBDB 0%, #FDFCFC 100%);
+  background-image: linear-gradient(180deg, #DBDBDB 0%, #F7F7F9 100%);
   background-attachment: fixed;
 }
 /* .slick-prev, .slick-next{

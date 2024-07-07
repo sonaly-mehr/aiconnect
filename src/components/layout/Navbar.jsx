@@ -15,7 +15,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto flex justify-between items-center">
         <motion.nav variants={navVariants}>
-          <h4 className="text-darkBlue font-michroma font-semibold text-3xl">
+          <h4 className="text-darkBlue font-bowler text-2xl">
             AI Connection
           </h4>
           </motion.nav>

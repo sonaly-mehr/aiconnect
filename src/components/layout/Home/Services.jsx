@@ -38,43 +38,7 @@ export function SampleNextArrow(props) {
 }
 
 const Services = () => {
-  var settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    arrows: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+
   const services = [
     {
       img: "/assets/service1.jpg",
@@ -154,12 +118,12 @@ const Services = () => {
       heading: "Operations Consolidation",
       descp: "",
     },
-    // {
-    //   img: "/assets/service5.jpg",
-    //   heading: "Mobile Connectivity on Cell Phone, Tablets, Laptop",
-    //   descp:
-    //     "Even if a device can’t connect due to network issues, you can rely on the automated back-fill to retrieve device history and fill the gaps in the historical data set.",
-    // },
+    {
+      img: "/assets/service13.jpg",
+      heading: "Predictive/Preventive Maintenance Matters",
+      descp:
+        " Having a preventive maintenance (PM) plan will reduce how often full replacement is necessary. Since each industrial fluid system is unique, the PM schedule should reflect that reality. With suitable monitoring tools PM becomes an easy task",
+    },
   ];
   return (
     <motion.div
@@ -168,8 +132,8 @@ const Services = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <div className="container mx-auto pt-24 pb-16">
-        <h4 className="heading mb-16 text-center">Our Services</h4>
+      <div className="container mx-auto pt-14 lg:pt-24 pb-10 lg:pb-16" id="solutions">
+        <h4 className="heading mb-6 lg:mb-12 text-center">Our Solutions</h4>
 
         {/* <Slider {...settings}>
       {services?.map((service, index) => (
@@ -198,7 +162,7 @@ const Services = () => {
           </div>
         ))}
       </Slider> */}
-        <div className="grid grid-cols-4 gap-x-6 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10">
           {services?.map((service, index) => (
             <motion.div
               variants={fadeIn(
@@ -213,27 +177,22 @@ const Services = () => {
                 <div class="flip">
                   <div class="front face text-center">
                     <div
-                      className={`linear-bg relative bg-no-repeat bg-center bg-cover w-full h-[380px]`}
+                      className={` relative bg-no-repeat bg-center bg-cover w-full h-[380px] card-overley`}
                       style={{ backgroundImage: `url(${service?.img})` }}
                     >
-                      {/* <Image
-                    src={service?.img}
-                    alt=""
-                    width={250}
-                    height={250}
-                    className="w-full h-[380px] rounded-xl"
-                  /> */}
-                      <h5 className="text-gray text-lg font-medium font-roboto absolute bottom-4 left-4 text-left">
+                      <div className="relative linear-bg w-full h-[380px]">
+                      <h5 className="text-gray text-sm leading-6 font-bold uppercase font-geometria absolute bottom-6 left-5 pr-4 text-left">
                         {service?.heading}
                       </h5>
                     </div>
+                    </div>
                   </div>
-                  <div class="back face text-white text-base flex flex-col justify-center items-center px-5 py-7 h-full">
-                    <p className=" font-light">{service?.descp}</p>
+                  <div class="back face text-white text-base flex flex-col justify-center items-center px-5 py-7 h-full text-center">
+                    <p className=" font-light font-geometria">{service?.descp}</p>
                     {service?.list && (
                       <ul className="flex flex-col gap-1 mt-3">
                         {service?.list?.map((item) => (
-                          <li className="font-normal list-disc font-roboto text-sm text-left">
+                          <li className=" font-lightl list-disc  font-geometria text-sm text-left">
                             {item}
                           </li>
                         ))}
@@ -246,19 +205,19 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="flex justify-between gap-28 items-center mt-10">
-          <div className="basis-[70%]">
-            <h4 className="mb-3 font-roboto capitalize text-3xl text-blue font-meidum">
+        <div className="mt-10 lg:w-[70%]">
+          <div className="">
+            <h4 className="mb-3 font-geometria capitalize text-xl lg:text-2xl text-blue font-medium">
               Leverage on Engineering Process Design expertise 
             </h4>
-            <p className="text-xl font-roboto font-normal text-[#595959]">
+            <p className="text-base lg:text-lg font-geometria font-normal text-[#595959]">
               With more than 26 years of experience in Environmental
               Engineering...We Offer a Complete Solution 
             </p>
-            <p className="uppercase font-medium text-base mt-4 mb-6 text-[#444444]">
+            <p className="uppercase font-normal font-geometria text-sm lg:text-base mt-4 mb-6 text-[#595959]">
               Work with the technological leader 
             </p>
-            <p className="text-base font-normal font-roboto text-[#595959]">
+            <p className="text-sm lg:text-base font-light font-geometria text-[#595959]">
               Book an appointment with our team using the form on this page. The
               information you provide will be used to match you with our top
               expert in your geographic region. We'll then follow up to schedule
@@ -267,29 +226,6 @@ const Services = () => {
               considering are right for you or if the project you're starting
               has what you need.
             </p>
-          </div>
-
-          <div className="basis-[30%]">
-            <div class="flipper-container cursor-pointer rounded-xl">
-              <div class="flip">
-                <div class="front face text-center">
-                  <div className="linear-bg relative bg-no-repeat bg-center bg-cover w-full h-[380px] bg-[url('/assets/service13.jpg')]">
-                    <h5 className="text-gray text-lg font-medium font-roboto absolute bottom-4 left-4 text-left">
-                      Predictive/Preventive Maintenance Matters
-                    </h5>
-                  </div>
-                </div>
-                <div class="back face">
-                  <p className="text-white text-base flex justify-center items-center px-5 py-7 font-light h-full">
-                    Having a preventive maintenance (PM) plan will reduce how
-                    often full replacement is necessary. Since each industrial
-                    fluid system is unique, the PM schedule should reflect that
-                    reality. With suitable monitoring tools PM becomes an easy
-                    task
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
