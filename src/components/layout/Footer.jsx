@@ -11,9 +11,9 @@ const Footer = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <div className="bg-gray py-8">
+      <div className="bg-gray py-7 lg:py-8">
         <div className="container mx-auto">
-          <p className="text-dark font-normal text-base font-geometria text-center">
+          <p className="text-dark font-normal text-sm lg:text-base font-geometria text-center">
             Copyright © 2024 | Powered by AIConnection
           </p>
         </div>

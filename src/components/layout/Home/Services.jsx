@@ -8,43 +8,17 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import service from "../../../../public/assets/service13.jpg";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/Motion";
+import { list } from "postcss";
 
-export function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <ChevronLeftIcon
-        style={{
-          ...style,
-        }}
-        className="text-white text-xl bg-blue w-12 h-12 rounded-full p-3 "
-      />
-    </div>
-  );
-}
-
-export function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <ChevronRightIcon
-        style={{
-          ...style,
-        }}
-        className="text-white text-xl bg-blue w-12 h-12 rounded-full p-3 "
-      />
-    </div>
-  );
-}
 
 const Services = () => {
 
   const services = [
     {
-      img: "/assets/service1.jpg",
+      img: "/assets/all_infrastructure_process.jpeg",
       heading: "All Infrastructure Process Connectivity from Anywhere",
-      descp: "The types of sensors typically used:",
       list: [
+        "The types of technologies used such as Lora, NB-Iot, Mioty, Zigbee, Bluetooth, Cellular",
         "Pump Performance Sensors",
         "Dynamic Fluid Processes sensors",
         "Water Quality Sensors",
@@ -52,77 +26,72 @@ const Services = () => {
       ],
     },
     {
-      img: "/assets/service2.jpg",
+      img: "/assets/mobile_connectivity.jpg",
       heading: "Mobile Connectivity on Cell Phone, Tablets, Laptop",
-      descp:
-        "Even if a device can’t connect due to network issues, you can rely on the automated back-fill to retrieve device history and fill the gaps in the historical data set.",
+      list: [
+        "Remote management of devices and systems",
+        "Faster data collection & analysis",
+        "Smarter control",
+        "WaTime-saving automation of activities",
+        "Cost-effective operations",
+        "Improved user experience",
+      ],
     },
     {
-      img: "/assets/service3.jpg",
-      heading: "Achieve sustainability through LEED and/or WELL certifications",
+      img: "/assets/sutainability.jpg",
+      heading: "Easier Sustainability Objectives Through LEED & WELL Certifications",
       list: [
-        "LEED identifies water consumption and monitoring in real-time. It awards points for deploying systems supporting water use reduction — indoors and outdoors",
+        " LEED identifies water consumption and monitoring in real-time. It awards points for deploying systems supporting water use reduction — indoors and outdoors.",
         "IoT technologies help buildings preserve water and enhance the quality for occupant safety. IoT-based environmental applications help achieve all relevant water-related standards for LEED and WELL.",
       ],
     },
     {
-      img: "/assets/service4.jpg",
-      heading: "Environmental Monitoring",
-      descp:
-        "Connect AC units from all major manufacturers to KNX, Modbus, BACnet etc. with ready-made AC communication interfaces.",
+      img: "/assets/service13.jpg",
+      heading: "Predictive/Preventive Maintenance Matters",
+      list: ['Having a preventive maintenance (PM) plan will reduce how often full replacement is necessary. Since each fluid system is unique, the PM schedule should reflect that reality. With suitable monitoring tools PM becomes an easy task']
     },
     {
-      img: "/assets/service5.jpg",
-      heading: "Wastewater Solutions",
+      img: "/assets/onsite_wastewater_solution.jpg",
+      heading: "Onsite Wastewater Solutions",
       descp:
         "Wastewater facilities use significant amounts of energy and are full of assets that are difficult, disruptive and hazardous to access and maintain. Pump downtime can cause significant disruption, production loss, and may even cause damage to the pump and other equipment – shortening lifespans and increasing maintenance costs. Wastewater Facility IoT solution could enable energy use reduction and implement intelligent maintenance schedules & improve the uptime of the assets",
     },
     {
-      img: "/assets/service6.jpg",
-      heading: "",
+      img: "/assets/storm_water.png",
+      heading: "Storm Water Solutions",
       descp:
         "Enable smart grid communication between industrial devices and energy distribution equipment.",
     },
     {
-      img: "/assets/service7.jpg",
-      heading: "Potable Water Solutions",
-      descp:
-        "Make sure your generator is ready to start when needed — No matter which brand of generator or control panel you are using.",
-    },
-    {
-      img: "/assets/service8.jpg",
-      heading: "Other Solutions",
-      descp:
-        "Enable building equipment (HVAC, electricity, lighting, fire, access controls, escalators etc.) to communicate with building systems.",
-    },
-    {
-      img: "/assets/service9.jpg",
-      heading: "Connectivity for Pump Stations",
-      descp:
-        "Wireless connectivity, safety, remote access and more for Automated Guided Vehicles (AGVs) and Autonomous Mobile Robots (AMRs).",
-    },
-    {
-      img: "/assets/service10.jpg",
+      img: "/assets/Wastewater_Treatment_plant.png",
       heading: "Connectivity Water/Wastewater Plants",
-      descp:
-        "Enable network connectivity, wireless communication, remote access and monitoring and much more for water applications.",
+      list: ['Enable network connectivity, wireless communication', 'remote access and monitoring and much more for', 'water applications.']
     },
     {
-      img: "/assets/service11.jpg",
-      heading: "Collaborative Troubleshooting",
-      descp:
-        "Use state of the art networking tools and competences to fix network problems and, even better, prevent your network from going down.",
+      img: "/assets/PORTABLE_WATER_SOLUTION.jpg",
+      heading: "Potable Water Solutions",
+      list: ['Raw water supply management', 'Water treatment plant monitoring', 'Water Quality Monitoring at WTP', 'Water quality monitoring in distribution system']
+
     },
     {
-      img: "/assets/service12.jpg",
+      img: "/assets/PUMP_STATION_SOLUTIONS.jpg",
+      heading: "Pump Stations Solutiions",
+      list: ['Optimize pump usage and reduce cost. ', 'Improved sustainability. ', 'Leaks or over-pressure, and trigger alerts to maintenance personnel,ensuring a safer work environment.', 'Better water management practices', 'Improved reliability and maintenance']
+    },
+    {
+      img: "/assets/environmental_monitoring.jpeg",
+      heading: "Environmental Monitoring",
+     list: ['Water quality monitoring', 'Energy monitoring', 'communication interfaces', 'Toxic Gas Detection', 'Water  body monitoring']
+    },
+    {
+      img: "/assets/OTHER_SOLUTIONS_2.jpg",
+      heading: "Other Solutions",
+
+    },
+    {
+      img: "/assets/OPERATION_CONSOLIDATION.png",
       heading: "Operations Consolidation",
       descp: "",
-    },
-    {
-      img: "/assets/service13.jpg",
-      heading: "Predictive/Preventive Maintenance Matters",
-      descp:
-        " Having a preventive maintenance (PM) plan will reduce how often full replacement is necessary. Since each industrial fluid system is unique, the PM schedule should reflect that reality. With suitable monitoring tools PM becomes an easy task",
     },
   ];
   return (
@@ -132,37 +101,10 @@ const Services = () => {
     //   whileInView="show"
     //   viewport={{ once: true, amount: 0.25 }}
     // >
-      <div className="container mx-auto pt-14 lg:pt-24 pb-10 lg:pb-16" id="solutions">
+    <>
+      <div className="container pt-14 lg:pt-24 pb-10 lg:pb-16" id="solutions">
         <h4 className="heading mb-6 lg:mb-12 text-center">Our Solutions</h4>
-
-        {/* <Slider {...settings}>
-      {services?.map((service, index) => (
-          <div class="flipper-container cursor-pointer rounded-xl" key={index}>
-            <div class="flip">
-              <div class="front face text-center">
-                <div className="linear-bg relative w-full h-full">
-                  <Image
-                    src={service?.img}
-                    alt=""
-                    width={250}
-                    height={250}
-                    className="w-full h-[250px] rounded-xl"
-                  />
-                  <h5 className="text-gray text-lg font-medium font-roboto absolute bottom-4 left-4 text-left">
-                    {service?.heading}
-                  </h5>
-                </div>
-              </div>
-              <div class="back face">
-                <p className="text-white text-lg flex justify-center items-center px-5 py-7">
-                  {service?.descp}
-                </p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Slider> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-5 md:gap-x-4 lg:gap-x-6 lg:gap-y-10 justify-items-center lg:justify-items-start">
           {services?.map((service, index) => (
             // <motion.div
             //   variants={fadeIn(
@@ -173,9 +115,9 @@ const Services = () => {
             //   )}
             //   key={index}
             // >
-              <div class="flipper-container cursor-pointer rounded-xl" key={index}>
+              <div class="flipper-container cursor-pointer rounded-xl overflow-hidden" key={index}>
                 <div class="flip">
-                  <div class="front face text-center">
+                  <div class="front face text-center rounded-xl">
                     <div
                       className={` relative bg-no-repeat bg-center bg-cover w-full h-[380px] card-overley`}
                       style={{ backgroundImage: `url(${service?.img})` }}
@@ -229,7 +171,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-    // </motion.div>
+     {/* </motion.div> */}
+    </>
   );
 };
 

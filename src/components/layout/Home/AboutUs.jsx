@@ -10,7 +10,7 @@ const AboutUs = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <div className="about-bg shadow-[0px_10px_33px_0px_#dcdbdb]" id="about">
+      <div className="about-bg shadow-[0px_10px_33px_0px_#e6e6e6]" id="about">
         <div className="container mx-auto pt-14 lg:pt-24 pb-10 lg:pb-20">
           <h4 className="heading mb-8 lg:mb-16 text-center">About Us</h4>
           <div className="flex gap-5 lg:gap-0 flex-col lg:flex-row lg:justify-between items-center mb-12 lg:mb-0">
