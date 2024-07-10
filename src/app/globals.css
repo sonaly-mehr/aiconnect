@@ -48,7 +48,7 @@ html {
   margin: auto;
   perspective: 1000;
   width: 100%;
-  height: 380px;
+  height: 328px;
 }
 
 .card-overley::before {
@@ -126,7 +126,11 @@ html {
   bottom: 0;
   background: rgba(128, 198, 243, 0.3)
 }
-
+@media screen and (max-width: 992px) {
+  .flipper-container {
+    height: 298px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   body {
