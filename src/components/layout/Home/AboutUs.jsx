@@ -28,15 +28,18 @@ const AboutUs = () => {
               </motion.div>
             </div>
             <div className="lg:basis-1/2">
-              <motion.div variants={fadeIn("up", "tween", 0.3, 1)} className="lg:pl-16">
+              <motion.div
+                variants={fadeIn("up", "tween", 0.3, 1)}
+                className="lg:pl-16"
+              >
                 <h4 className="text-blue font-bowler mb-3 lg:mb-8  text-xl">
                   Who We Are......
                 </h4>
                 <p className="text-base font-light font-geometria text-[#555]">
                   Welcome to AI Connection, where we bring over 26 years of
                   unparalleled expertise in Environmental Engineering to the
-                  forefront of technological innovation.  At AI Connect, we are
-                  dedicated to providing comprehensive solutions that merge
+                  forefront of technological innovation.  At AI Connection, we
+                  are dedicated to providing comprehensive solutions that merge
                   advanced environmental engineering practices with cutting-edge
                   AI-driven process control.{" "}
                 </p>
@@ -46,7 +49,10 @@ const AboutUs = () => {
 
           <div className="flex gap-5 lg:gap-0 flex-col-reverse lg:flex-row lg:justify-between items-center">
             <div className="lg:basis-1/2">
-              <motion.div variants={fadeIn("up", "tween", 0.3, 1)} className="lg:pr-16">
+              <motion.div
+                variants={fadeIn("up", "tween", 0.3, 1)}
+                className="lg:pr-16"
+              >
                 <h4 className="text-blue font-bowler mb-4 lg:mb-8 text-xl">
                   Our Commitment
                 </h4>

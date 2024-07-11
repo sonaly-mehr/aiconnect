@@ -54,14 +54,17 @@ const Services = () => {
     {
       img: "/assets/onsite_wastewater_solution.jpg",
       heading: "Onsite Wastewater Solutions",
-      descp:
-        "Wastewater facilities use significant amounts of energy and are full of assets that are difficult, disruptive and hazardous to access and maintain. Pump downtime can cause significant disruption, production loss, and may even cause damage to the pump and other equipment – shortening lifespans and increasing maintenance costs. Wastewater Facility IoT solution could enable energy use reduction and implement intelligent maintenance schedules & improve the uptime of the assets",
+      list: [
+        "Wastewater facilities use significant amounts of energy and are full of assets that are difficult, disruptive and hazardous to access and maintain. Pump downtime can cause significant disruption, production loss, and may even cause damage to the pump and other equipment – shortening lifespans and increasing maintenance costs.",
+        "Wastewater Facility IoT solution could enable energy use reduction and implement intelligent maintenance schedules & improve the uptime of the assets",
+      ],
     },
     {
       img: "/assets/storm_water.png",
       heading: "Storm Water Solutions",
-      descp:
+      list: [
         "Enable smart grid communication between industrial devices and energy distribution equipment.",
+      ],
     },
     {
       img: "/assets/Wastewater_Treatment_plant.png",
@@ -107,11 +110,29 @@ const Services = () => {
     {
       img: "/assets/OTHER_SOLUTIONS_2.jpg",
       heading: "Other Solutions",
+      list: [
+        "Agricultural Operation Monitoring",
+        "Industrial Water Quality/Quantity Monitoring",
+        "Livestock Management",
+        "Brewery & Distillation IoT Solutions",
+        "Environmental Monitoring",
+        "Mining Operations Monitoring",
+        "Energy Monitoring",
+        "Power Plant Process Monitoringg",
+        "Asset Managementg",
+        "Air Quality Monitoring",
+        "Building HVAC System Monitoring",
+      ],
     },
     {
       img: "/assets/OPERATION_CONSOLIDATION.png",
       heading: "Operations Consolidation",
-      descp: "",
+      list: [
+        "Consolidation of all Operations in One Control Center",
+        "Monitoring of Inter dependencies of Operations",
+        "Easy Maintenance and Deployment of New Process Monitoring",
+        "Reduce Manual Efforts in Process Monitoring",
+      ],
     },
   ];
   return (
@@ -123,7 +144,11 @@ const Services = () => {
     // >
     <>
       <div className="container pt-14 lg:pt-24 pb-10 lg:pb-16" id="solutions">
-        <h4 className="heading mb-6 lg:mb-12 text-center">Our Solutions</h4>
+        <h4 className="heading mb-1 lg:mb-2 text-center">Our Solutions</h4>
+        <p className="lg:w-1/2 mx-auto text-center  text-[13px]  lg:text-base font-geometria font-light text-[##616161] mb-8 lg:mb-12">
+          With more than 26 years of experience in Environmental
+          Engineering...We Offer a Complete Solution 
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-5 md:gap-x-4 lg:gap-x-6 lg:gap-y-10 justify-items-center lg:justify-items-start">
           {services?.map((service, index) => (
             // <motion.div
@@ -154,12 +179,11 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div class="back face text-white text-base flex flex-col justify-center items-center px-5 py-7 h-full text-center">
-                  <p className=" font-light font-geometria">{service?.descp}</p>
+                <div class="back face text-white flex flex-col px-6 py-2 h-full text-left">
                   {service?.list && (
-                    <ul className="flex flex-col gap-1 mt-3">
+                    <ul className="flex flex-col gap-1 mt-3 text-left px-2">
                       {service?.list?.map((item) => (
-                        <li className=" font-lightl list-disc  font-geometria text-sm text-left">
+                        <li className=" font-lightl list-disc  font-geometria text-[13px] text-left">
                           {item}
                         </li>
                       ))}
