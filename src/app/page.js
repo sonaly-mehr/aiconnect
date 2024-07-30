@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import AboutUs from "@/components/layout/Home/AboutUs";
 import Contact from "@/components/layout/Home/Contact";
 import Hero from "@/components/layout/Home/Hero";
@@ -10,6 +11,7 @@ export default function Home() {
       <Services/>
       <AboutUs/>
       <Contact/>
+      <Footer/>
     </main>
   );
 }

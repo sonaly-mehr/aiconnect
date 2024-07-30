@@ -32,7 +32,7 @@ export const SERVICES = [
     ],
   },
   {
-    img: "/assets/service13.jpg",
+    img: "/assets/predictive-maintenance.jpg",
     heading: "Predictive/Preventive Maintenance Matters",
     list: [
       "Having a preventive maintenance (PM) plan will reduce how often full replacement is necessary. Since each fluid system is unique, the PM schedule should reflect that reality. With suitable monitoring tools PM becomes an easy task",
@@ -41,18 +41,25 @@ export const SERVICES = [
   {
     img: "/assets/onsite_wastewater_solution.jpg",
     heading: "Onsite Wastewater Solutions",
-    descp:
-      "Wastewater facilities use significant amounts of energy and are full of assets that are difficult, disruptive and hazardous to access and maintain. Pump downtime can cause significant disruption, production loss, and may even cause damage to the pump and other equipment – shortening lifespans and increasing maintenance costs. Wastewater Facility IoT solution could enable energy use reduction and implement intelligent maintenance schedules & improve the uptime of the assets",
+    list: [
+      "Wastewater facilities use significant amounts of energy and are full of assets that are difficult, disruptive and hazardous to access and maintain. Pump downtime can cause significant disruption, production loss, and may even cause damage to the pump and other equipment – shortening lifespans and increasing maintenance costs.",
+      "Wastewater Facility IoT solution could enable energy use reduction and implement intelligent maintenance schedules & improve the uptime of the assets",
+    ],
   },
   {
-    img: "/assets/storm_water.png",
+    img: "/assets/stormwater.png",
     heading: "Storm Water Solutions",
-    descp:
-      "Enable smart grid communication between industrial devices and energy distribution equipment.",
+    list: [
+      "ESC Compliance Monitoring",
+      "ESC Reporting, Alarm and Event Records",
+      "Local Flow Control",
+      "Modular Battery or LocalPower Source",
+      "Wifi, Cellular or LPWAN Technologies",
+    ],
   },
   {
     img: "/assets/Wastewater_Treatment_plant.png",
-    heading: "Connectivity Water/Wastewater Plants",
+    heading: "Wastewater Treatment Plants",
     list: [
       "Enable network connectivity, wireless communication",
       "remote access and monitoring and much more for",
@@ -92,6 +99,16 @@ export const SERVICES = [
     ],
   },
   {
+    img: "/assets/OPERATION_CONSOLIDATION.png",
+    heading: "Operations Consolidation",
+    list: [
+      "Consolidation of all Operations in One Control Center",
+      "Monitoring of Inter dependencies of Operations",
+      "Easy Maintenance and Deployment of New Process Monitoring",
+      "Reduce Manual Efforts in Process Monitoring",
+    ],
+  },
+  {
     img: "/assets/OTHER_SOLUTIONS_2.jpg",
     heading: "Other Solutions",
     list: [
@@ -102,20 +119,225 @@ export const SERVICES = [
       "Environmental Monitoring",
       "Mining Operations Monitoring",
       "Energy Monitoring",
-      "Power Plant Process Monitoring",
-      "Asset Management",
+      "Power Plant Process Monitoringg",
+      "Asset Managementg",
       "Air Quality Monitoring",
       "Building HVAC System Monitoring",
     ],
   },
+];
+
+// WATER SOLUTION
+export const WATER_SOLUTION = [
   {
-    img: "/assets/OPERATION_CONSOLIDATION.png",
-    heading: "Operations Consolidation",
+    img: "/assets/water-solution/Wastewater-Treatment.png",
+    heading: "Wastewater Treatment Plant Control",
     list: [
-      "Consolidation of all Operations in One Control Center",
-      "Monitoring of Inter dependencies of Operations",
-      "Easy Maintenance and Deployment of New Process Monitoring",
-      "Reduce Manual Efforts in Process Monitoring",
+      "Effluent Monitoring incl BOD, COD, Nitrate, pH, Turbidity etc.",
+      "Process Monitoring incl. DO, Electrical Conductivity,Temperature, Flow Rates, Pressure, MLSS, etc., and keeps an automated record of the parameters mentioned above. ",
+      "The data collected from sensors helps to optimize the scheduling of supervision, stay with predictive analytics, cut operational costs, and improve the accuracy of the water system.",
+    ],
+  },
+  {
+    img: "/assets/water-solution/Potable-Water-Treatment.jpg",
+    heading: "Potable Water Treatment Systems",
+    list: [
+      "Unbalanced pH of the water may lead to increased operating costs. Low pH results corrosion of pipes  ",
+      "High turbidity: High turbidity levels can make removing pathogens from the water difficult",
+      "Lack of control on coagulation affect treatability ",
+      "Clogged water filters reduce flow rates, surging backwash frequency, and increasing maintenance ",
+      "Disinfection inefficiency increase risk of public health ",
+      "Temperature instability can impact chemical reactions  ",
+      "Some chemicals may not be completely removed during treatment, posing a risk to public health  ",
+    ],
+  },
+  {
+    img: "/assets/water-solution/Septic-System.jpg",
+    heading: "Septic System Control",
+    descrp: 'Non-contact sensors prevent hazardous system overloads. Real-time measurements are displayed in an online dashboard, historical data is stored for informed proactive maintenance and decision making',
+
+    list: [
+      "Monitor holding or septic tank levels 24/7 ",
+      "Monitor the surrounding environmental impact i.e. well water quality, water bodies, etc.",
+      "Automated call out for septage hauler and owners ",
+      "Pump failure alarm text, call or email notifications ",
+      "Automatic Back-Up Prevention Response ",
+    ],
+  },
+  {
+    img: "/assets/water-solution/blower.png",
+    heading: "Blower Energy Use Optimization",
+    list: [
+      "Can reduce aeration energy by 25 to 40 percent ",
+      "The airflow valves need to be sized to operate between 30 to 70% open downstream of flow meter",
+      "Properly installed right type of air fow meter.",
+      "DO Meters: Right technology of  DO sensor and & proper installation",
+      "Ammonia Level: Monitor loading of ammonia",
+    ],
+  },
+  {
+    img: "/assets/water-solution/Automatic-compliance-Reports.png",
+    heading: "Automatic Compliance Reporting",
+    list: [
+      "You no longer have to manually submit your quarterly and yearly reports to regulator, the system can be configured to autogenerate and submit such reports ",
+    ],
+  },
+  {
+    img: "/assets/water-solution/Generator.png",
+    heading: "Generator",
+    list: [
+      "Fuel level sensors",
+      "Monitor warnings, faults, and shutdown codes",
+      "Measure the oil pressure in the generator engine sump and the coolant pressure",
+      "Measure oil temperature and coolant temperature",
+      "Measures the voltage of the battery that powers the panel when the generator is offline ",
+      "Measures the status of the automatic transfer switch that transfers power from grid to generator ",
+    ],
+  },
+  {
+    img: "/assets/water-solution/Collaborative-Troubleshooting.jpg",
+    heading: "Collaborative Troubleshooting",
+    list: [
+      "All data accessible to authorized users enables ease of troubleshooting",
+      "Ensure that there is a process in place to have the right people respond based on agreed protocols.",
+      "Receive immediate SMS and email alerts for energy alarms, PAC warnings and alarms, or when any metric crosses your preset thresholds ",
+    ],
+  },
+  {
+    img: "/assets/water-solution/Legacy-PLC-Alternate.png",
+    heading: "Legacy PLC Alternate ",
+    list: [
+      "Retrofit PLCs for IoT connectivity",
+      "PLC is connected to a cloud application wirelessly, you can query the PLC for tags, then send the tag information to the cloud. Common uses here would be to monitor a system for conditions like storage tank level, anomaly detection, power supply availability, and triggered alarms.",
+      "Can avoid site visits by controlling the PLC remotely,",
+    ],
+  },
+  {
+    img: "/assets/water-solution/Reporting.png",
+    heading:
+      "Consumer IoT Solution for Pool Equipments Controlling & Automation ",
+    list: [
+      "Make sure your generator is ready to start when",
+      "needed — No matter which brand of generator or",
+      "control panel you are using.",
+    ],
+  },
+  {
+    img: "/assets/water-solution/Water-Management-Solutions.png",
+    heading: "Water Management Solutions ",
+    list: [
+      "Smart water meters help measure water usage in real-time and send this information from consumers to providers. Such solutions not only facilitate water management but also increase the accuracy of billing.  ",
+      "River water quality monitoring",
+      "Smart dam monitoring",
+      "Smart irrigation systems",
+      "Smart water leak detectors",
+      "Smart water resource control solutions",
+    ],
+  },
+  {
+    img: "/assets/water-solution/industrial-water-treatment.jpg",
+    heading: "Industrial Water Monitoring ",
+    list: [
+      "Process Water Quality Monitoring",
+      "Compliance Monitoring",
+      "Factory Ambient Condition Monitoring",
+      "Enhanced Data-Driven Decision Making: Industrial IoT devices generate vast amounts of real-time data. This data enables businesses to make more informed and timely decisions, improving efficiency and reducing costs.",
+      "Predictive Maintenance: Using sensors and data analytics, IoT devices can predict equipment failures before they occur",
+    ],
+  },
+  {
+    img: "/assets/water-solution/Reservoir-Monitoring.png",
+    heading: "Reservoir Monitoring ",
+    list: [
+      "Water is critical to many industrial and commercial processes, with the real-time monitoring a facility can improve energy efficiency + predict maintenance. Our Water Management solutions are built on our world-leading integrated data, IoTand it enables you to integrate and analyze all of your data sources to provide a real-time view of key metrics and predictive insights, as well as providing you with all-new tools to detect leaks, assess water quality, predict maintenance, reduce energy costs  + much more, simply.",
+      "Manage System-wide Reservoir Operations"
+    ],
+  },
+];
+
+// PUMP STATION
+export const PUMP_STATION = [
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Enhance real-time performance + trigger anomaly alerts. ",
+    list: [
+      "Set-up performance thresholds and trigger instant alerts. Use automation + control to optimise output, and enhance efficiency. Reduce energy costs..",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Versatile Connectivity from Anywhere",
+    list: ["Mobile Connectivity on Cell Phone, Tablets, Laptop"],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Improve Maintenance, Predict+Prevent Failures",
+    list: [
+      "Continuously monitor your pumps' performance to predict failures and schedule maintenance. Keep assets in the field longer, reduce maintenance needs, and prevent breakdowns",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Extend asset lifespan + improve decision-making",
+    list: [
+      "Set-up performance thresholds and trigger instant alerts. Use automation + control to optimise output, and enhance efficiency. Reduce energy costs.",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Fits all your existinghardware + technologies.",
+    list: [
+      "Our pump monitoring solutions can integrate with any machinery, system, hardware, sensor, technology, or data repository.",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Vibration Analysis",
+    list: [
+      "Accelerometers+gyroscope piezoelectric and piezoresistive sensors cover wide spectrum of vibration frequencies. ",
+      "Eddy current sensors measure the current produced due to changing magnetic fields & is measured as vibrations.",
+      "Laser displacement sensors measure changes in height, distance, and vibrations using a laser.",
+      "Strain gauge is used to measure the change in electrical resistance but need electronics to convert the electrical resistance into a displacement value.",
+      "Eddy current and laser displacement are contactless ",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "All Infrastructure Process Connectivity from Anywhere",
+    list: [
+      "Monitor and manage your geographically dispersed pumps remotely from a single solution. Examine outputs and explore individual asset, fleet, or site performance. ",
+    ],
+  },
+];
+
+// STROM_WATER_SOLUTION
+export const STROM_WATER_SOLUTION = [
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Automate Storm Monitoring",
+    list: [
+      "Manage All Municipal Inspections ",
+      "See What’s Happening Anytime. Assign Corrective Actions/Enforcement quickly",
+      "Create sophisticated reports and then automate their production",
+      "Dashboards that give you total visibility of your site and that can even predict future issues - all in real-time",
+      "Set thresholds and trigger real-time alerts and automated actions to turn off machinery, stop staff and prevent breaches.",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Unauthorized Discharge Control",
+    list: [
+      "Agencies often look for efficient and inexpensive ways to lower the risk of unauthorized discharges into their combined sewer system i.e. addressing issues with identifying sources of specific pollutants (heavy metals and Total Dissolved Solids) in the stormwater runoff.  ",
+      "The traditional approach would be to deploy manual samplers at multiple sites. Take the innovative approach of a low-cost solution involved the utilization of Internet-of-Things sensors to capture Electrical Conductivity and Total Dissolved Solids water quality readings.",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Flood Monitoring & Control",
+    list: [
+      "LoRaWAN nodes are placed in remote areas and connected to level, saturation, rainfall sensors  ",
+      "The nodes transmit sensor data via LoRa wireless technology to a gateway in the control center located miles away.",
+      "Gateway passes data to the cloud based platform or PC for application server and SCADA management.    ",
     ],
   },
 ];

@@ -38,7 +38,7 @@ const AboutUs = () => {
                 <p className="text-base font-light font-geometria text-[#555]">
                   Welcome to AI Connection, where we bring over 26 years of
                   unparalleled expertise in Environmental Engineering to the
-                  forefront of technological innovation.  At AI Connection, we
+                  forefront of technology innovation.  At AI Connection, we
                   are dedicated to providing comprehensive solutions that merge
                   advanced environmental engineering practices with cutting-edge
                   AI-driven process control.{" "}
