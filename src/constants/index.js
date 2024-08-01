@@ -56,6 +56,7 @@ export const SERVICES = [
       "Modular Battery or LocalPower Source",
       "Wifi, Cellular or LPWAN Technologies",
     ],
+    link: "/storm-water-solution",
   },
   {
     img: "/assets/Wastewater_Treatment_plant.png",
@@ -75,6 +76,7 @@ export const SERVICES = [
       "Water Quality Monitoring at WTP",
       "Water quality monitoring in distribution system",
     ],
+    link: "/water-solution",
   },
   {
     img: "/assets/PUMP_STATION_SOLUTIONS.jpg",
@@ -86,6 +88,7 @@ export const SERVICES = [
       "Better water management practices",
       "Improved reliability and maintenance",
     ],
+    link: "/pump-stations",
   },
   {
     img: "/assets/environmental_monitoring.jpeg",
@@ -124,6 +127,7 @@ export const SERVICES = [
       "Air Quality Monitoring",
       "Building HVAC System Monitoring",
     ],
+    link: "/other-solution",
   },
 ];
 
@@ -154,7 +158,8 @@ export const WATER_SOLUTION = [
   {
     img: "/assets/water-solution/Septic-System.jpg",
     heading: "Septic System Control",
-    descrp: 'Non-contact sensors prevent hazardous system overloads. Real-time measurements are displayed in an online dashboard, historical data is stored for informed proactive maintenance and decision making',
+    descrp:
+      "Non-contact sensors prevent hazardous system overloads. Real-time measurements are displayed in an online dashboard, historical data is stored for informed proactive maintenance and decision making",
 
     list: [
       "Monitor holding or septic tank levels 24/7 ",
@@ -250,7 +255,7 @@ export const WATER_SOLUTION = [
     heading: "Reservoir Monitoring ",
     list: [
       "Water is critical to many industrial and commercial processes, with the real-time monitoring a facility can improve energy efficiency + predict maintenance. Our Water Management solutions are built on our world-leading integrated data, IoTand it enables you to integrate and analyze all of your data sources to provide a real-time view of key metrics and predictive insights, as well as providing you with all-new tools to detect leaks, assess water quality, predict maintenance, reduce energy costs  + much more, simply.",
-      "Manage System-wide Reservoir Operations"
+      "Manage System-wide Reservoir Operations",
     ],
   },
 ];
@@ -338,6 +343,140 @@ export const STROM_WATER_SOLUTION = [
       "LoRaWAN nodes are placed in remote areas and connected to level, saturation, rainfall sensors  ",
       "The nodes transmit sensor data via LoRa wireless technology to a gateway in the control center located miles away.",
       "Gateway passes data to the cloud based platform or PC for application server and SCADA management.    ",
+    ],
+  },
+];
+
+// STROM_WATER_SOLUTION
+export const OTHER_SOLUTION = [
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Irrigation Water Quality",
+    list: [
+      "Planning, developing, distributing and managing the use of water resources using an array of IoT technologies.   ",
+      "Microcontrollers and sensors —such as ultrasonic sensors, flow sensors, temperature, salinity, conductivity, humidity, pressure, or luminosity sensors help farmers reduce waste while maintaining soil health, improving water conservation, and increasing crop yield",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Precision Agriculture",
+    list: [
+      "Smart agricultural decision-making through data analytics  ",
+      "Automated agricultural machines for improving crop quality",
+      "Limited use of pesticides and healthier soil quality   ",
+      "Reduction of risk in sales and business processes  ",
+      "Deployment of predictive systems to create agile farming workflows  ",
+      "Increased efficiency on the land  ",
+      "Minimized labor costs due to smart technologies ",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Industrial Operations Water Monitoring ",
+    list: [
+      "High turbidity in H2O can lead to a gradual build-up of impurities such as silt, clay, and algae ",
+      "Lower pH causes corrosion, while excess pH value leads to the accumulation of mineral deposits. ",
+      "Higher water temperatures provide a perfect breeding ground for microorganisms like bacteria and algae.    ",
+      "High alkalinity causes a build-up of calcium carbonate and bicarbonate ions on the surfaces     ",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Flood Monitoring & Control",
+    list: [
+      "LoRaWAN nodes are placed in remote areas and connected to level, saturation, rainfall sensors  ",
+      "The nodes transmit sensor data via LoRa wireless technology to a gateway in the control center located miles away.",
+      "Gateway passes data to the cloud based platform or PC for application server and SCADA management.    ",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "IoT in Brewery & Distillation",
+    descrp:
+      "Planning, developing, distributing and managing the use of water resources using an array of IoT technologies. Microcontrollers and sensors —such as ultrasonic sensors, flow sensors, temperature, salinity, conductivity, humidity, pressure, or luminosity sensors— placed on pipes or pumps. Such smart irrigation systems or crop water management systems can help farmers reduce waste while maintaining soil health, improving water conservation, and increasing crop yield",
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Environmental Monitoring",
+    descrp:
+      "Planning, developing, distributing and managing the use of water resources using an array of IoT technologies. Microcontrollers and sensors —such as ultrasonic sensors, flow sensors, temperature, salinity, conductivity, humidity, pressure, or luminosity sensors— placed on pipes or pumps. Such smart irrigation systems or crop water management systems can help farmers reduce waste while maintaining soil health, improving water conservation, and increasing crop yield",
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Mining IoT Solutions",
+    list: [
+      "Improved safety during mining operations ",
+      "Automated mining processes",
+      "Predictive analytics for a proactive approach    ",
+      "Higher cost-efficiency and energy savings   ",
+      "More time saving  ",
+      "Six applications in mining:  ",
+    ],
+    numberdList: [
+      "Autonomous mining equipment",
+      "Location and proximity sensors",
+      "On-demand ventilation systems",
+      "Equipment sensors for predictive maintenance",
+    ],
+  },
+
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Energy Monitoring ",
+    list: [
+      "Real-time Monitoring ",
+      "Power Quality Monitoring",
+      "Demand Monitoring and control    ",
+      "Fault Management    ",
+      "Advanced Analytics    ",
+      "Smart Reporting   ",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Power Plant-Process Monitoring",
+    list: [
+      "Temperature fluctuations can decrease heat transfer efficiency & deformation or failure. Thermal stress can cause thermal stress, deformation, cracking ",
+      "Pressure fluctuations can lead to challenges in maintaining the correct fluid flow rate and pressure",
+      "Coolant contamination can reduces the overall system productivity and lead to equipment damage.     ",
+      "Change in viscosity increase pump load  increases unnecessary energy consumption.     ",
+      "Changes in coolant density can emit pollutants, such as nitrogen oxides and carbon monoxide.      ",
+      "The humidity of the coolant can impact the efficiency of gas turbines     ",
+    ],
+  },
+
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Asset Management",
+    list: [
+      "GPS-enabled sensors to establish virtual boundaries or geofences for tracking and managing assets   ",
+      "IoT-enabled sensors provide real-time data on the location and condition of goods in transit ",
+      "IoT-powered analytics and ML predict equipment failures and recommend proactive maintenance   ",
+      "IoT sensors can automate stock management processes ",
+      "IoT sensors can track the physical location of assets in real time using   ",
+      "Detect and diagnose potential faults and failures in equipment or machinery before they become serious issues.  ",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Air Quality Solutions",
+    list: [
+      "Monitors multiple locations cost-effectively and generates actionable insights by leveraging the IoT technology.  ",
+      "Reduction in the negative impact on the environment",
+      "Better compliance with safety regulations — a must in workplaces, industrial facilities, educational campuses, and residential units   ",
+      "An increase in the safety of human beings  ",
+      "Early detection of gaseous leakages — receive alerts in real-time and avoid accidents.  ",
+    ],
+  },
+  {
+    img: "/assets/all_infrastructure_process.jpeg",
+    heading: "Smart HVAC System",
+    list: [
+      "Predictive maintenance   ",
+      "Remote temperature monitoring ",
+      "Predictive analytics  ",
+      "Regulatory compliance ",
+      "Consumer replenishment  ",
     ],
   },
 ];

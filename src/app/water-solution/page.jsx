@@ -7,64 +7,64 @@ import PortableWaterSolution from "./PortableWaterSolution";
 const page = () => {
   return (
     <div className="container">
-      <div className="flex items-center relative">
-        <div className="mr-[-140px] h-[152px]">
+      <div className="flex items-center relative mt-4 lg:mt-0">
+        <div className="lg:mr-[-140px] h-[40px] lg:h-[152px]">
           <Image
-            src="/assets/waterflow2.png"
+            src="/assets/waterflow4.png"
             alt=""
             width={300}
             height={200}
             className="w-auto h-full"
           />
         </div>
-        <div className="relative right-[270px]">
-          <h2 className="text-[70px] leading-[70px] text-darkBlue font-bowler [text-shadow:_2px_4px_3px_rgba(0_0_0_/_0.3)]">
+        <div className="relative right-16 lg:right-[145px]  xl:right-[215px] w-full xl:w-auto">
+          <h2 className="text-lg sm:text-xl lg:text-[60px] 2xl:text-[70px] xl:leading-[70px] text-darkBlue font-bowler [text-shadow:_2px_4px_3px_rgba(0_0_0_/_0.3)]">
             Water Solutions
           </h2>
         </div>
       </div>
-      <div className="flex justify-between font-geometria font-normal text-[11.81px] text-dark">
-        <div className="flex items-center gap-2">
+      <div className="flex justify-between flex-wrap font-geometria font-normal text-[11.81px] text-dark mt-4 lg:mt-0">
+        <div className="flex items-center gap-2 basis-[48%] lg:basis-auto">
           <Image
             src="/assets/icon1.svg"
             alt=""
             width={57}
             height={57}
-            className="w-[57px] h-[57px]"
+            className="w-[30px] lg:w-[57px] h-[30px] lg:h-[57px]"
           />
           <p>Real Time Time Information of water quality</p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 basis-[48%] lg:basis-auto">
           <Image
             src="/assets/icon2.svg"
             alt=""
             width={57}
             height={57}
-            className="w-[57px] h-[57px]"
+            className="w-[30px] lg:w-[57px] h-[30px] lg:h-[57px]"
           />
           <p>
             Controlling and Managing the water system from anywhere at anytime
           </p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 basis-full lg:basis-auto">
           <Image
             src="/assets/icon3.svg"
             alt=""
             width={57}
             height={57}
-            className="w-[57px] h-[57px]"
+            className="w-[30px] lg:w-[57px] h-[30px] lg:h-[57px]"
           />
           <p>Alerts and Notifications</p>
         </div>
       </div>
-      <div className="flex justify-around font-geometria font-normal text-[11.81px] text-dark">
+      <div className="flex justify-between lg:justify-around font-geometria font-normal text-[11.81px] text-dark pb-8 lg:pb-0">
         <div className="flex items-center gap-2">
           <Image
             src="/assets/icon4.svg"
             alt=""
             width={57}
             height={57}
-            className="w-[57px] h-[57px]"
+            className="w-[30px] lg:w-[57px] h-[30px] lg:h-[57px]"
           />
           <p>
             Eliminate the need of Manual Intervention and Reduce Labour costs
@@ -76,7 +76,7 @@ const page = () => {
             alt=""
             width={57}
             height={57}
-            className="w-[57px] h-[57px]"
+            className="w-[30px] lg:w-[57px] h-[30px] lg:h-[57px]"
           />
           <p>Accurate Data insights, graphs and reports for Decision Making</p>
         </div>
