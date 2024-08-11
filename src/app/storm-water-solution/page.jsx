@@ -40,7 +40,7 @@ const page = () => {
         <div className="lg:basis-[70%] text-black text-xs font-normal flex flex-col gap-3 lg:gap-0">
           <div className="flex gap-2 items-center">
             <img
-              src="/assets/pump-station/icon1.png"
+              src="/assets/strom-water-solution/icon1.png"
               alt=""
               className="w-[80px] xl:w-[100px] h-auto"
             />
@@ -48,7 +48,7 @@ const page = () => {
           </div>
           <div className="flex gap-2 items-center">
             <img
-              src="/assets/pump-station/icon2.png"
+              src="/assets/strom-water-solution/icon2.png"
               alt=""
               className="w-[80px] xl:w-[100px] h-auto"
             />
@@ -56,7 +56,7 @@ const page = () => {
           </div>
           <div className="flex gap-2 items-center">
             <img
-              src="/assets/pump-station/icon3.png"
+              src="/assets/strom-water-solution/icon3.png"
               alt=""
               className="w-[80px] xl:w-[100px] h-auto"
             />
@@ -64,7 +64,7 @@ const page = () => {
           </div>
           <div className="flex gap-2 items-center">
             <img
-              src="/assets/pump-station/icon4.png"
+              src="/assets/strom-water-solution/icon4.png"
               alt=""
               className="w-[100px] h-auto"
             />
@@ -73,7 +73,7 @@ const page = () => {
           </div>
           <div className="flex gap-2 items-center">
             <img
-              src="/assets/pump-station/icon5.png"
+              src="/assets/strom-water-solution/icon5.png"
               alt=""
               className="w-[80px] xl:w-[100px] h-auto"
             />
@@ -82,7 +82,7 @@ const page = () => {
           </div>
         </div>
         <div className="lg:basis-[30%]">
-            <img src="/assets/pump-station/wastewater.png" alt="" className="w-full h-full rounded-lg"/>
+            <img src="/assets/strom-water-solution/wastewater.png" alt="" className="w-full h-full rounded-lg"/>
         </div>
       </div>
     </div>

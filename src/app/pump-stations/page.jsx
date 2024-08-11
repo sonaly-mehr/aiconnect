@@ -36,7 +36,7 @@ const page = () => {
       </div>
       <div className="lg:w-[85%] mx-auto flex flex-col lg:flex-row gap-3 lg:gap-8 pt-8 border-t-[1px] border-[#E2E2E2]">
         <Image
-          src="/assets/pump-station/package-pump.jpg"
+          src="/assets/pump-station/pump_station.jpg"
           alt=""
           width={250}
           height={245}

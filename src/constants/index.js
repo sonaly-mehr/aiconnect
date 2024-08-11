@@ -146,20 +146,18 @@ export const WATER_SOLUTION = [
     img: "/assets/water-solution/Potable-Water-Treatment.jpg",
     heading: "Potable Water Treatment Systems",
     list: [
-      "Unbalanced pH of the water may lead to increased operating costs. Low pH results corrosion of pipes  ",
-      "High turbidity: High turbidity levels can make removing pathogens from the water difficult",
-      "Lack of control on coagulation affect treatability ",
-      "Clogged water filters reduce flow rates, surging backwash frequency, and increasing maintenance ",
-      "Disinfection inefficiency increase risk of public health ",
-      "Temperature instability can impact chemical reactions  ",
-      "Some chemicals may not be completely removed during treatment, posing a risk to public health  ",
+      "Raw water quality monitoring ",
+      "Process train monitoring and control such as automated filter backwash systems, pumping systems, residual management, chemical injection monitoring, disinfection control",
+      "Treated water quality monitoring ",
+      "Distribution water quality monitoring ",
+      "Predictive maintenance of equipment ",
     ],
   },
   {
     img: "/assets/water-solution/Septic-System.jpg",
     heading: "Septic System Control",
     descrp:
-      "Non-contact sensors prevent hazardous system overloads. Real-time measurements are displayed in an online dashboard, historical data is stored for informed proactive maintenance and decision making",
+      "Installation of Non-contact sensors which prevent hazardous system overloads. Real-time measurements display in an online portal, historical data logging with reports for proactive maintenance.",
 
     list: [
       "Monitor holding or septic tank levels 24/7 ",
@@ -173,11 +171,11 @@ export const WATER_SOLUTION = [
     img: "/assets/water-solution/blower.png",
     heading: "Blower Energy Use Optimization",
     list: [
-      "Can reduce aeration energy by 25 to 40 percent ",
+      "Can reduce the energy required for aeration by 25 to 40 percent ",
       "The airflow valves need to be sized to operate between 30 to 70% open downstream of flow meter",
-      "Properly installed right type of air fow meter.",
       "DO Meters: Right technology of  DO sensor and & proper installation",
-      "Ammonia Level: Monitor loading of ammonia",
+      "Ammonia Level monitoring",
+      "Ensuring that correct technology is used to maximize effciency and lower running costs"
     ],
   },
   {
@@ -195,8 +193,8 @@ export const WATER_SOLUTION = [
       "Monitor warnings, faults, and shutdown codes",
       "Measure the oil pressure in the generator engine sump and the coolant pressure",
       "Measure oil temperature and coolant temperature",
-      "Measures the voltage of the battery that powers the panel when the generator is offline ",
-      "Measures the status of the automatic transfer switch that transfers power from grid to generator ",
+      "Measures the voltage of the battery that powers the panel when the generator is offline  ",
+      "Measures the status of the automatic transfer switch that transfers power from grid to generator  ",
     ],
   },
   {
@@ -231,7 +229,7 @@ export const WATER_SOLUTION = [
     img: "/assets/water-solution/Water-Management-Solutions.png",
     heading: "Water Management Solutions ",
     list: [
-      "Smart water meters help measure water usage in real-time and send this information from consumers to providers. Such solutions not only facilitate water management but also increase the accuracy of billing.  ",
+      "Smart water meters help measure water usage in real-time and send this information from consumers to providers. Such solutions not only facilitate water management but also increase the accuracy of billing.   ",
       "River water quality monitoring",
       "Smart dam monitoring",
       "Smart irrigation systems",
@@ -263,40 +261,46 @@ export const WATER_SOLUTION = [
 // PUMP STATION
 export const PUMP_STATION = [
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/pump-station/enhance_performance.png",
     heading: "Enhance real-time performance + trigger anomaly alerts. ",
     list: [
-      "Set-up performance thresholds and trigger instant alerts. Use automation + control to optimise output, and enhance efficiency. Reduce energy costs..",
+      "Set-up performance thresholds and trigger instant alerts. Use automation + control to optimise output, and enhance efficiency. Reduce energy costs.",
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/pump-station/versatile_connectivity.jpg",
     heading: "Versatile Connectivity from Anywhere",
     list: ["Mobile Connectivity on Cell Phone, Tablets, Laptop"],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/pump-station/improve_maintenance.webp",
     heading: "Improve Maintenance, Predict+Prevent Failures",
     list: [
       "Continuously monitor your pumps' performance to predict failures and schedule maintenance. Keep assets in the field longer, reduce maintenance needs, and prevent breakdowns",
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/pump-station/extend_asset.jpg",
     heading: "Extend asset lifespan + improve decision-making",
     list: [
       "Set-up performance thresholds and trigger instant alerts. Use automation + control to optimise output, and enhance efficiency. Reduce energy costs.",
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
-    heading: "Fits all your existinghardware + technologies.",
+    img: "/assets/pump-station/fits_hardware.png",
+    heading: "Fits all your existing hardware + technologies.",
     list: [
-      "Our pump monitoring solutions can integrate with any machinery, system, hardware, sensor, technology, or data repository.",
+      "Optimize pumping activities.",
+      "Decrease pipe maintenance cost.",
+      "Minimize failures.",
+      "Measure pressure, level and flow.",
+      "Easy SCADA integration.",
+      "Remote valve control.",
+      "Be notified though mail, message and call.",
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/pump-station/vibration-analysis.jpg",
     heading: "Vibration Analysis",
     list: [
       "Accelerometers+gyroscope piezoelectric and piezoresistive sensors cover wide spectrum of vibration frequencies. ",
@@ -307,10 +311,10 @@ export const PUMP_STATION = [
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/pump-station/all_infrastructure.jpg",
     heading: "All Infrastructure Process Connectivity from Anywhere",
     list: [
-      "Monitor and manage your geographically dispersed pumps remotely from a single solution. Examine outputs and explore individual asset, fleet, or site performance. ",
+      "Monitor and manage your geographically dispersed pumps remotely from a single solution. Examine outputs and explore individual asset, fleet, or site performance.",
     ],
   },
 ];

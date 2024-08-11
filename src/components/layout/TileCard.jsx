@@ -7,7 +7,6 @@ const TileCard = ({ service, index, children }) => {
   const path = usePathname();
 
   return (
-    // <Link href={service?.link ? service?.link : "#"}>
       <Link
         class="flipper-container cursor-pointer rounded-xl overflow-hidden"
         key={index}
@@ -53,7 +52,6 @@ const TileCard = ({ service, index, children }) => {
           </div>
         </div>
       </Link>
-    // </Link>
   );
 };
 
