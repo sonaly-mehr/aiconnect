@@ -39,6 +39,14 @@ const page = () => {
           </TileCard>
         ))}
       </div>
+
+      <ul className="flex flex-col gap-1 text-sm lg:text-base lg:w-[40%] mt-12 lg:mt-20 mb-10">
+        <li className="list-disc">Cost-effectiveness: With minimal infrastructure required, our IoT-based solution ensures a low initial investment and reduced operational expenses.</li>
+        <li className="list-disc">Improved water resource management: Constant near real-time monitoring enables data-driven decision-making and optimizes water use, ultimately preventing water loss and improving water distribution efforts.</li>
+        <li className="list-disc">Enhanced safety and security: Monitoring water levels remotely reduces the need for manual inspections, mitigating potential safety hazards and human error risks.</li>
+        <li className="list-disc">Maintenance efficiency: Our battery-operated IP65 rated submersible level sensors minimise the need for regular maintenance, saving time and resources.</li>
+        <li className="list-disc">Long-term data analysis: Collecting historical data enables long-term trend analysis and better understanding of water consumption patterns, leading to improved water management strategies.</li>
+      </ul>
     </div>
   );
 };

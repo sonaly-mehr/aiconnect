@@ -175,7 +175,7 @@ export const WATER_SOLUTION = [
       "The airflow valves need to be sized to operate between 30 to 70% open downstream of flow meter",
       "DO Meters: Right technology of  DO sensor and & proper installation",
       "Ammonia Level monitoring",
-      "Ensuring that correct technology is used to maximize effciency and lower running costs"
+      "Ensuring that correct technology is used to maximize effciency and lower running costs",
     ],
   },
   {
@@ -322,7 +322,7 @@ export const PUMP_STATION = [
 // STROM_WATER_SOLUTION
 export const STROM_WATER_SOLUTION = [
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/strom-water-solution/automate.png",
     heading: "Automate Storm Monitoring",
     list: [
       "Manage All Municipal Inspections ",
@@ -333,7 +333,7 @@ export const STROM_WATER_SOLUTION = [
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/strom-water-solution/Unauthorized_discharge.jpg",
     heading: "Unauthorized Discharge Control",
     list: [
       "Agencies often look for efficient and inexpensive ways to lower the risk of unauthorized discharges into their combined sewer system i.e. addressing issues with identifying sources of specific pollutants (heavy metals and Total Dissolved Solids) in the stormwater runoff.  ",
@@ -341,7 +341,7 @@ export const STROM_WATER_SOLUTION = [
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/strom-water-solution/flood_monitoring.png",
     heading: "Flood Monitoring & Control",
     list: [
       "LoRaWAN nodes are placed in remote areas and connected to level, saturation, rainfall sensors  ",
@@ -354,67 +354,172 @@ export const STROM_WATER_SOLUTION = [
 // STROM_WATER_SOLUTION
 export const OTHER_SOLUTION = [
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/other-solution/irrigation.jpg",
     heading: "Irrigation Water Quality",
     list: [
-      "Planning, developing, distributing and managing the use of water resources using an array of IoT technologies.   ",
-      "Microcontrollers and sensors —such as ultrasonic sensors, flow sensors, temperature, salinity, conductivity, humidity, pressure, or luminosity sensors help farmers reduce waste while maintaining soil health, improving water conservation, and increasing crop yield",
+      {
+        listHead:
+          "Planning, developing, distributing and managing the use of water resources using an array of IoT technologies.",
+      },
+      {
+        listHead:
+          "Microcontrollers and sensors —such as ultrasonic sensors, flow sensors, temperature, salinity, conductivity, humidity, pressure, or luminosity sensors help farmers reduce waste while maintaining soil health, improving water conservation, and increasing crop yield",
+      },
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/other-solution/Precision_Agriculture.jpg",
     heading: "Precision Agriculture",
     list: [
-      "Smart agricultural decision-making through data analytics  ",
-      "Automated agricultural machines for improving crop quality",
-      "Limited use of pesticides and healthier soil quality   ",
-      "Reduction of risk in sales and business processes  ",
-      "Deployment of predictive systems to create agile farming workflows  ",
-      "Increased efficiency on the land  ",
-      "Minimized labor costs due to smart technologies ",
+      {
+        listHead: "Smart agricultural decision-making through data analytics",
+      },
+      {
+        listHead: "Automated agricultural machines for improving crop quality",
+      },
+      {
+        listHead: "Limited use of pesticides and healthier soil quality",
+      },
+      {
+        listHead: "Reduction of risk in sales and business processes",
+      },
+      {
+        listHead:
+          "Deployment of predictive systems to create agile farming workflows",
+      },
+      {
+        listHead: "Increased efficiency on the land",
+      },
+      {
+        listHead: "Minimized labor costs due to smart technologies",
+      },
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
-    heading: "Industrial Operations Water Monitoring ",
+    img: "/assets/other-solution/Industrial_Operations.jpg",
+    heading: "Industrial Operations Water Monitoring  ",
     list: [
-      "High turbidity in H2O can lead to a gradual build-up of impurities such as silt, clay, and algae ",
-      "Lower pH causes corrosion, while excess pH value leads to the accumulation of mineral deposits. ",
-      "Higher water temperatures provide a perfect breeding ground for microorganisms like bacteria and algae.    ",
-      "High alkalinity causes a build-up of calcium carbonate and bicarbonate ions on the surfaces     ",
+      {
+        listHead:
+          "High turbidity in H2O can lead to a gradual build-up of impurities such as silt, clay, and algae",
+      },
+      {
+        listHead:
+          "Lower pH causes corrosion, while excess pH value leads to the accumulation of mineral deposits. ",
+      },
+      {
+        listHead:
+          "Higher water temperatures provide a perfect breeding ground for microorganisms like bacteria and algae. ",
+      },
+      {
+        listHead:
+          "High alkalinity causes a build-up of calcium carbonate and bicarbonate ions on the surfaces ",
+      },
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
-    heading: "Flood Monitoring & Control",
+    img: "/assets/other-solution/Pet_&_Farm_Animal_Sensor.png",
+    heading: "Pet & Farm Animal Sensors",
     list: [
-      "LoRaWAN nodes are placed in remote areas and connected to level, saturation, rainfall sensors  ",
-      "The nodes transmit sensor data via LoRa wireless technology to a gateway in the control center located miles away.",
-      "Gateway passes data to the cloud based platform or PC for application server and SCADA management.    ",
+      {
+        listHead: "Sensors Used in a Smart Dog Collar: ",
+      },
+      {
+        listHead: "GPS: To accurately detect the pet's location. ",
+      },
+      {
+        listHead: "Accelerometer: It measures the animal's activity level.  ",
+      },
+      {
+        listHead:
+          "Heart Rate Monitor: To monitor the dog's heart rate and sleep patterns. ",
+      },
+      {
+        listHead:
+          "Temperature sensor: To measure the dog's body temperature.  ",
+      },
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
-    heading: "IoT in Brewery & Distillation",
-    descrp:
-      "Planning, developing, distributing and managing the use of water resources using an array of IoT technologies. Microcontrollers and sensors —such as ultrasonic sensors, flow sensors, temperature, salinity, conductivity, humidity, pressure, or luminosity sensors— placed on pipes or pumps. Such smart irrigation systems or crop water management systems can help farmers reduce waste while maintaining soil health, improving water conservation, and increasing crop yield",
+    img: "/assets/other-solution/Brewery_Industry.jpg",
+    heading: "Brewery & Distillation",
+    list: [
+      {
+        listHead:
+          "Real-time Analytics - Directly measure the critical process parameters and key performance indicators in real-time ",
+      },
+      {
+        listHead:
+          "Complete Portfolio / FDA Compliant-Measure Critical Process Parameters and Key Performance Indicators with our sensors that meet or exceed all FDA regulatory requirements, for holistic process understanding and control ",
+      },
+      {
+        listHead:
+          "Process Consistency-Better batch-to-batch eproducibility and increased consistency from the brewhouse to roduction  ",
+      },
+    ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/other-solution/Energy_Monitoring.png",
     heading: "Environmental Monitoring",
-    descrp:
-      "Planning, developing, distributing and managing the use of water resources using an array of IoT technologies. Microcontrollers and sensors —such as ultrasonic sensors, flow sensors, temperature, salinity, conductivity, humidity, pressure, or luminosity sensors— placed on pipes or pumps. Such smart irrigation systems or crop water management systems can help farmers reduce waste while maintaining soil health, improving water conservation, and increasing crop yield",
+    list: [
+      {
+        listHead:
+          "Monitor the Environment: Environmental condition monitors across fields, industrial sites and water management systems with sensors ",
+      },
+      {
+        listHead:
+          "Measure Data: Evaluate chemical leaks to critical equipment failures",
+      },
+      {
+        listHead: "Catalog Data ",
+      },
+      {
+        listHead: "Provide Actionable Insights from the Data and Analysis ",
+        listChild: [
+          {
+            text: "Water Quality Monitoring",
+          },
+          {
+            text: "Air Quality Monitoring",
+          },
+          {
+            text: "Energy Monitoring",
+          },
+          {
+            text: "Toxic Gas Detection",
+          },
+        ],
+      },
+    ],
+    subLists: [
+      "Water Quality Monitoring",
+      "Air Quality Monitoring",
+      "Energy Monitoring",
+      "Toxic Gas Detection",
+    ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/other-solution/Mining.jpg",
     heading: "Mining IoT Solutions",
     list: [
-      "Improved safety during mining operations ",
-      "Automated mining processes",
-      "Predictive analytics for a proactive approach    ",
-      "Higher cost-efficiency and energy savings   ",
-      "More time saving  ",
-      "Six applications in mining:  ",
+      {
+        listHead: "Improved safety during mining operations ",
+      },
+      {
+        listHead: "Automated mining processes ",
+      },
+      {
+        listHead: "Predictive analytics for a proactive approach  ",
+      },
+      {
+        listHead: "Higher cost-efficiency and energy savings ",
+      },
+      {
+        listHead: "More time saving",
+      },
+      {
+        listHead: "Six applications in mining:",
+      },
     ],
     numberdList: [
       "Autonomous mining equipment",
@@ -425,62 +530,146 @@ export const OTHER_SOLUTION = [
   },
 
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/other-solution/Energy_Monitoring.png",
     heading: "Energy Monitoring ",
     list: [
-      "Real-time Monitoring ",
-      "Power Quality Monitoring",
-      "Demand Monitoring and control    ",
-      "Fault Management    ",
-      "Advanced Analytics    ",
-      "Smart Reporting   ",
+      {
+        listHead: "Real-time Monitoring ",
+      },
+      {
+        listHead: "Power Quality Monitoring ",
+      },
+      {
+        listHead: "Demand Monitoring and control  ",
+      },
+      {
+        listHead: "Fault Management ",
+      },
+      {
+        listHead: "Advanced Analytics ",
+      },
+      {
+        listHead: "Smart Reporting   ",
+      },
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
-    heading: "Power Plant-Process Monitoring",
+    img: "/assets/other-solution/construction_monitoring.png",
+    heading: "Construction Site Monitoring",
     list: [
-      "Temperature fluctuations can decrease heat transfer efficiency & deformation or failure. Thermal stress can cause thermal stress, deformation, cracking ",
-      "Pressure fluctuations can lead to challenges in maintaining the correct fluid flow rate and pressure",
-      "Coolant contamination can reduces the overall system productivity and lead to equipment damage.     ",
-      "Change in viscosity increase pump load  increases unnecessary energy consumption.     ",
-      "Changes in coolant density can emit pollutants, such as nitrogen oxides and carbon monoxide.      ",
-      "The humidity of the coolant can impact the efficiency of gas turbines     ",
+      {
+        listHead: "Management of materials on site ",
+      },
+      {
+        listHead: "Smart Construction ",
+        listChild: [
+          {
+            text: "Real-time overview of the status of the construction site, on Smartphone or Laptop, dashboards on progress status, alerts in the event of an instruction or problem.",
+          },
+        ],
+      },
+      {
+        listHead: "Energy management of a construction site ",
+      },
+      {
+        listHead: "Water management on site",
+      },
+      {
+        listHead: "Securing personnel on site ",
+      },
+      {
+        listHead: "Construction site automations ",
+      },
     ],
   },
 
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/other-solution/asset_managemnent.jpg",
     heading: "Asset Management",
     list: [
-      "GPS-enabled sensors to establish virtual boundaries or geofences for tracking and managing assets   ",
-      "IoT-enabled sensors provide real-time data on the location and condition of goods in transit ",
-      "IoT-powered analytics and ML predict equipment failures and recommend proactive maintenance   ",
-      "IoT sensors can automate stock management processes ",
-      "IoT sensors can track the physical location of assets in real time using   ",
-      "Detect and diagnose potential faults and failures in equipment or machinery before they become serious issues.  ",
+      {
+        listHead:
+          "GPS-enabled sensors to establish virtual boundaries or geofences for tracking and managing assets ",
+      },
+      {
+        listHead:
+          "IoT-enabled sensors provide real-time data on the location and condition of goods in transit  ",
+      },
+      {
+        listHead:
+          "IoT-powered analytics and ML predict equipment failures and recommend proactive maintenance ",
+      },
+
+      {
+        listHead: "IoT sensors can automate stock management processes",
+      },
+      {
+        listHead:
+          "IoT sensors can track the physical location of assets in real time using   ",
+      },
+      {
+        listHead:
+          "Detect and diagnose potential faults and failures in equipment or machinery before they become serious issues. ",
+      },
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
+    img: "/assets/other-solution/indoor-air-quality.jpg",
     heading: "Air Quality Solutions",
     list: [
-      "Monitors multiple locations cost-effectively and generates actionable insights by leveraging the IoT technology.  ",
-      "Reduction in the negative impact on the environment",
-      "Better compliance with safety regulations — a must in workplaces, industrial facilities, educational campuses, and residential units   ",
-      "An increase in the safety of human beings  ",
-      "Early detection of gaseous leakages — receive alerts in real-time and avoid accidents.  ",
+      {
+        listHead:
+          "Monitors multiple locations cost-effectively and generates actionable insights by leveraging the IoT technology. ",
+      },
+      {
+        listHead: "Reduction in the negative impact on the environment ",
+      },
+      {
+        listHead:
+          "Better compliance with safety regulations — a must in workplaces, industrial facilities, educational campuses, and residential units ",
+      },
+      {
+        listHead: "An increase in the safety of human beings ",
+      },
+      {
+        listHead:
+          "Early detection of gaseous leakages — receive alerts in real-time and avoid accidents. ",
+      },
     ],
   },
   {
-    img: "/assets/all_infrastructure_process.jpeg",
-    heading: "Smart HVAC System",
+    img: "/assets/other-solution/smart_building.png",
+    heading: "Smart Building System",
     list: [
-      "Predictive maintenance   ",
-      "Remote temperature monitoring ",
-      "Predictive analytics  ",
-      "Regulatory compliance ",
-      "Consumer replenishment  ",
+      {
+        listHead: "Predictive maintenance ",
+      },
+      {
+        listHead: "Remote temperature monitoring ",
+      },
+      {
+        listHead: "Predictive analytics ",
+      },
+      {
+        listHead: "Regulatory compliance ",
+      },
+      {
+        listHead: "Smart Building",
+        listChild: [
+          {
+            heading: "ENVIRONMENT",
+            text: "Energy Efficiency, greenhouse gas reduction, water management Comfort and Well-being: Managing indoor air quality",
+          },
+          {
+            heading: "COMFORT & WELL-BEING",
+            text: "Managing indoor air quality, sound, light..",
+          },
+          {
+            heading: "PERFORMANCES",
+            text: "Occupancy management, occupant/visitor flows, equipment availability",
+          },
+        ],
+      },
     ],
   },
 ];
