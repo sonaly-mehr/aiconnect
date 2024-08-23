@@ -14,7 +14,8 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-5 md:gap-x-4 lg:gap-x-6 lg:gap-y-10 justify-items-center lg:justify-items-start">
           {SERVICES?.map((service, index) => (
             <TileCard service={service} index={index}>
-              <img src={service?.img} alt="" className={`w-full h-full ${index==7 ? 'object-contain' : 'object-cover'} ${index===4 && 'object-fill'}`}/>
+              {/* <img src={service?.img} alt="" className={`w-full h-full ${index==7 ? 'object-contain' : 'object-cover'} ${index===4 && 'object-fill'}`}/> */}
+              <img src={service?.img} alt="" className="w-full h-full object-cover"/>
             </TileCard>
           ))}
         </div>
