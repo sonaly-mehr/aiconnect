@@ -48,7 +48,7 @@ html {
   margin: auto;
   perspective: 1000;
   width: 100%;
-  height: 328px;
+  height: 308px;
 }
 
 .card-overley::before {
@@ -103,6 +103,7 @@ html {
   text-align: center;
   background-color: #F7F7F9;
   border-radius: 10px;
+  overflow-y: visible;
 }
 
 .about-bg {
@@ -126,10 +127,15 @@ html {
   bottom: 0;
   background: rgba(128, 198, 243, 0.3)
 }
+
+.data-\[side\=bottom\]\:slide-in-from-top-2[data-side="bottom"] {
+  background: white;
+}
+
 @media screen and (max-width: 992px) {
-  .flipper-container {
+  /* .flipper-container {
     height: 320px;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -148,7 +154,13 @@ html {
   .face.back {
     background-color: white;
   }
+
   .about-bg {
     background-image: none
+  }
+
+  .data-\[side\=bottom\]\:slide-in-from-top-2[data-side="bottom"] {
+    position: relative;
+    left: 8px;
   }
 }

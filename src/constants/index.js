@@ -418,7 +418,7 @@ export const OTHER_SOLUTION = [
     ],
   },
   {
-    img: "/assets/other-solution/Pet_&_Farm_Animal_Sensor.png",
+    img: "/assets/other-solution/Pet_Farm_Animal_Sensor.png",
     heading: "Pet & Farm Animal Sensors",
     list: [
       {

@@ -1,11 +1,15 @@
 "use client";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/Motion";
-import Image from "next/image";
-import React from "react";
-import contact from "../../../../public/assets/contact2.jpg";
+import React, { useEffect, useRef } from "react";
 
 const Contact = () => {
+  const myRef = useRef();
+  useEffect(() => {
+    if (window.location.search === "?goTo=contact") {
+      myRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   return (
     <motion.div
       variants={staggerContainer}
@@ -14,7 +18,7 @@ const Contact = () => {
       viewport={{ once: true, amount: 0.25 }}
       className=""
     >
-      <div className="container pt-20 pb-16 lg:pb-28 " id="contact">
+      <div className="container pt-20 pb-16 lg:pb-28 " id="contact" ref={myRef}>
         <div className="flex contact-bg  shadow-[0px_0px_10px_1px_#d8d8d8] rounded-lg">
           <div className="lg:basis-[50%] bg-gray px-4 py-7 lg:py-10 lg:px-10 relative z-10 w-full">
             <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>

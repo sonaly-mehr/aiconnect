@@ -1,11 +1,10 @@
-import React from "react";
 import { SERVICES } from "@/constants";
 import TileCard from "../TileCard";
 
 const Services = () => {
   return (
     <>
-      <div className="container pt-14 lg:pt-24 pb-10 lg:pb-16" id="solutions">
+      <div className="container pt-14 lg:pt-24 pb-10 lg:pb-16">
         <h4 className="heading mb-1 lg:mb-2 text-center">Our Solutions</h4>
         <p className="lg:w-1/2 mx-auto text-center  text-[13px]  lg:text-base font-geometria font-light text-[##616161] mb-8 lg:mb-12">
           With more than 26 years of experience in Environmental
@@ -15,7 +14,7 @@ const Services = () => {
           {SERVICES?.map((service, index) => (
             <TileCard service={service} index={index}>
               {/* <img src={service?.img} alt="" className={`w-full h-full ${index==7 ? 'object-contain' : 'object-cover'} ${index===4 && 'object-fill'}`}/> */}
-              <img src={service?.img} alt="" className="w-full h-full object-cover"/>
+              <img src={service?.img} alt="" className="w-full h-full object-fit"/>
             </TileCard>
           ))}
         </div>
@@ -28,9 +27,6 @@ const Services = () => {
             <p className="text-base lg:text-lg font-geometria font-normal text-[#595959]">
               With more than 26 years of experience in Environmental
               Engineering...We Offer a Complete Solution 
-            </p>
-            <p className="uppercase font-normal font-geometria text-sm lg:text-base mt-4 mb-6 text-[#595959]">
-              Work with the technological leader 
             </p>
             <p className="text-sm lg:text-base font-light font-geometria text-[#595959]">
               Book an appointment with our team using the form on this page. The

@@ -37,8 +37,8 @@ const bowler = localFont({
 });
 
 export const metadata = {
-  title: "Monitoring Any Process For Your Business",
-  description: "Monitoring Any Process For Your Business",
+  title: "Monitoring Any Process From Anywhere",
+  description: "Monitoring Any Process From Anywhere",
 };
 
 export default function RootLayout({ children }) {

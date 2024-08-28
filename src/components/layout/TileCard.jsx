@@ -15,14 +15,14 @@ const TileCard = ({ service, index, children }) => {
       <div class="flip">
         <div class="front face text-center rounded-xl">
           <div
-            className={` relative w-full h-[320px] lg:h-[330px] card-overley`}
+            className={` relative w-full h-[308px] card-overley`}
           >
             {/* <div className="w-full  h-full bg-no-repeat bg-center bg-cover" style={{backgroundImage: `url(${service?.img})`}}> */}
             {children}
             {/* <img src={service?.img} alt="" className={`w-full h-full object-cover `}/> */}
             {/* ${index!==5 && index !==7 ? 'object-cover' : 'object-contain'} ${index===4 && '!object-fill'}`} */}
 
-            <div className="absolute linear-bg w-full h-[330px] left-0 bottom-0">
+            <div className="absolute linear-bg w-full h-[308px] left-0 bottom-0">
               <h5 className="text-gray text-sm leading-6 font-bold uppercase font-geometria absolute bottom-6 left-5 pr-4 text-left">
                 {service?.heading}
               </h5>
@@ -30,7 +30,7 @@ const TileCard = ({ service, index, children }) => {
             {/* </div> */}
           </div>
         </div>
-        <div class="back face text-white flex flex-col px-6 py-2 h-full text-left">
+        <div class="back face text-white flex flex-col px-6 py-2 h-full text-left overflow-y-auto">
           {service?.descrp && (
             <p className="font-lightl font-geometria text-[11px] text-left mt-3">
               {service?.descrp}
