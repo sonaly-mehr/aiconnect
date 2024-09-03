@@ -2,12 +2,12 @@ import nodemailer from 'nodemailer';
 
 const transport = nodemailer.createTransport({
 
-  host: "smtp.gmail.com", // E.g., 'smtp.gmail.com'
-  port: "465", // E.g., 587 for TLS
-  secure: true, // Use TLS in production
+  host: "smtp.gmail.com", 
+  port: "465",
+  secure: true,
     auth: {
-      user: "aiconnectbc@gmail.com", // Your SMTP username
-      pass: "ffmkhwulhhjydtrp", // Your SMTP password
+      user: process.env.MAIL_USER, 
+      pass: process.env.MAIL_PASSWORD,
     },
 });
 
@@ -21,7 +21,7 @@ export const sendEmail = async (dto) => {
       subject,
       html: message,
       text: message,
-      attachments, // Handle attachments
+      attachments,
     });
     return info;
   } catch (error) {

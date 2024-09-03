@@ -17,10 +17,10 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: name === 'file' ? files[0] : value
-    }));
+    setFormData({
+      ...formData,
+      [name]: files ? files[0] : value,
+    });
   };
 
   const handleSubmit = async (e) => {
@@ -37,7 +37,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch("/api/send-mail", {
+      const response = await fetch("/api/send-email", {
         method: "POST",
         body: data,
       });
@@ -81,7 +81,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                value={formData.name}
+                // value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name"
                 className="input"
@@ -90,7 +90,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                value={formData.email}
+                // value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
                 className="input"
@@ -99,7 +99,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="subject"
-                value={formData.subject}
+                // value={formData.subject}
                 onChange={handleChange}
                 placeholder="Subject"
                 className="input"
@@ -108,7 +108,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 rows={4}
-                value={formData.message}
+                // value={formData.message}
                 onChange={handleChange}
                 placeholder="Your Message"
                 className="input"

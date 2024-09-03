@@ -20,8 +20,8 @@ export async function POST(request) {
 
     const receipent = [
       {
-        name: "Sunny Mangat",
-        address: "aiconnectbc@gmail.com",
+        name: "Sonaly Akther",
+        address: "sonaly.mehr@gmail.com",
       },
     ];
 
