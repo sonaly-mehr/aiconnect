@@ -3,6 +3,11 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+
+export async function GET() {
+  return NextResponse.json({ message: 'Hello, world!' });
+}
+
 export async function POST(req) {
   try {
     const formData = await req.formData();
@@ -14,18 +19,18 @@ export async function POST(req) {
 
     // Create a transporter object using SMTP
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
+      host: process.env.MAIL_HOST,
+      port: process.env.MAIL_PORT,
       secure: true, // true for 465, false for other ports
       auth: {
-        user: "aiconnectbc@gmail.com",
-        pass: "ffmkhwulhhjydtrp",
+        user: process.env.MAIL_USER,
+        pass: process.env.MAIL_PASSWORD,
       },
     });
 
     const mailOptions = {
       from: `${name} <${email}>`,
-      to: "aiconnectbc@gmail.com", // Receiver email from env
+      to: process.env.MAIL_USER, // Receiver email from env
       subject: subject,
       text: message,
       attachments: [],
@@ -54,3 +59,4 @@ export async function POST(req) {
     return NextResponse.json({ success: false }, { status: 500 });
   }
 }
+
