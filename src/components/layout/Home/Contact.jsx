@@ -37,7 +37,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch("/api/emails", {
+      const response = await fetch("https://aiconnect-lake.vercel.app/api/emails", {
         method: "POST",
         body: data,
       });
