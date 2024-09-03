@@ -1,4 +1,4 @@
-import { SERVICES } from "@/constants";
+import { SERVICES } from "../../../constants/index";
 import TileCard from "../TileCard";
 
 const Services = () => {

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer } from "@/utils/Motion";
+import { fadeIn, staggerContainer } from "../../../utils/Motion";
 import Navbar from "../Navbar";
 // import MobileNav from "../MobileNav";
 

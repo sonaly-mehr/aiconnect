@@ -280,13 +280,6 @@ export const PUMP_STATION = [
     ],
   },
   {
-    img: "/assets/pump-station/extend_asset.jpg",
-    heading: "Extend asset lifespan + improve decision-making",
-    list: [
-      "Set-up performance thresholds and trigger instant alerts. Use automation + control to optimise output, and enhance efficiency. Reduce energy costs.",
-    ],
-  },
-  {
     img: "/assets/pump-station/fits_hardware.png",
     heading: "Fits all your existing hardware + technologies.",
     list: [
@@ -311,10 +304,10 @@ export const PUMP_STATION = [
     ],
   },
   {
-    img: "/assets/pump-station/all_infrastructure.jpg",
-    heading: "All Infrastructure Process Connectivity from Anywhere",
+    img: "/assets/pump-station/extend_asset.jpg",
+    heading: "Extend asset lifespan + improve decision-making",
     list: [
-      "Monitor and manage your geographically dispersed pumps remotely from a single solution. Examine outputs and explore individual asset, fleet, or site performance.",
+      "Set-up performance thresholds and trigger instant alerts. Use automation + control to optimise output, and enhance efficiency. Reduce energy costs.",
     ],
   },
 ];

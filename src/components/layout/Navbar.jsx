@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "../../components/ui/dropdown-menu";
 import { AlignJustify, ChevronDown } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { X } from "lucide-react";

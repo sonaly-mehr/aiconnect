@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geometria.variable} ${bowler.variable}`}>
         {children}
+        <Toaster/>
       </body>
     </html>
   );

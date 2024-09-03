@@ -1,5 +1,5 @@
 "use client";
-import { fadeIn, staggerContainer } from "@/utils/Motion";
+import { fadeIn, staggerContainer } from "../../../utils/Motion";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 

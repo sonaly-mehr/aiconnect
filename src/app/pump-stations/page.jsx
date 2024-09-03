@@ -1,6 +1,6 @@
-import Navbar from "@/components/layout/Navbar";
-import TileCard from "@/components/layout/TileCard";
-import { PUMP_STATION } from "@/constants";
+import Navbar from "../../components/layout/Navbar";
+import TileCard from "../../components/layout/TileCard";
+import { PUMP_STATION } from "../../constants/index";
 import Image from "next/image";
 import React from "react";
 
@@ -10,13 +10,12 @@ const page = () => {
       <Navbar />
       <div className="container mt-5 lg:mt-16">
         <div className="flex flex-col lg:flex-row lg:items-center relative mt-4 lg:mt-0">
-        <Image
+          <Image
             src="/assets/pump-station/aiconnect-logo.svg"
             alt=""
             width={300}
             height={200}
             className="w-auto h-[100px] lg:h-[200px] hidden lg:block"
-            // absolute left-[-30px] lg:left-[-100px]
           />
           <div className="lg:mr-[-100px] h-[70px] lg:h-[152px] relative z-[10]">
             <Image
@@ -27,8 +26,8 @@ const page = () => {
               className="w-auto h-full"
             />
           </div>
-          <div className="w-fit static lg:relative right-16 lg:right-[160px]  xl:right-[250px] mb-5 lg:mb-0">
-          <h2 className="text-2xl lg:text-[60px] 2xl:text-[70px] md:leading-[50px] xl:leading-[70px] text-darkBlue font-bowler [text-shadow:_2px_4px_3px_rgba(0_0_0_/_0.3)]">
+          <div className="w-fit static lg:relative right-16 lg:right-[160px] xl:right-[250px] mb-5 lg:mb-0">
+            <h2 className="text-2xl lg:text-[60px] 2xl:text-[70px] md:leading-[50px] xl:leading-[70px] text-darkBlue font-bowler [text-shadow:_2px_4px_3px_rgba(0_0_0_/_0.3)]">
               Pump Stations
             </h2>
             <p className="text-[#043D5D] text-xs lg:text-2xl lg:mt-2 xl:mt-[-6px]">
@@ -36,41 +35,14 @@ const page = () => {
             </p>
           </div>
         </div>
-        {/* <div className="relative ">
-          <Image
-            src="/assets/pump-station/aiconnect-logo.svg"
-            alt=""
-            width={300}
-            height={200}
-            className="w-auto h-[100px] lg:h-[200px] absolute left-[-30px] lg:left-[-100px]"
-          />
-        </div>
-        <div className="flex flex-col lg:flex-row lg:items-center relative mt-4 lg:mt-0">
-          <div className="ml-10 lg:mr-[-140px] lg:ml-0 h-[60px] lg:h-[152px] relative z-[10]">
-            <Image
-              src="/assets/waterflow4.png"
-              alt=""
-              width={300}
-              height={200}
-              className="w-auto h-full"
-            />
-          </div>
-          <div className="static lg:relative right-16 lg:right-[145px]  xl:right-[215px] w-full xl:w-auto mt-8 lg:mt-0 mb-5 lg:mb-0">
-            <h2 className="text-lg sm:text-xl lg:text-[60px] 2xl:text-[70px] xl:leading-[70px] text-darkBlue font-bowler [text-shadow:_2px_4px_3px_rgba(0_0_0_/_0.3)]">
-              Pump Stations
-            </h2>
-            <p className="text-[#043D5D] text-xs lg:text-2xl lg:mt-2 xl:mt-[-6px]">
-              Process Monitoring Solutions for Predictive Maintenance & Control
-            </p>
-          </div>
-        </div> */}
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-8 pt-8 border-t-[1px] border-[#E2E2E2]">
+
+        <div className="flex flex-col lg:flex-row gap-3 lg:gap-8 xl:gap-14 pt-8 border-t-[1px] border-[#E2E2E2]">
           <Image
             src="/assets/pump-station/pump_station.jpg"
             alt=""
             width={250}
             height={245}
-            className="w-[80%] h-auto rounded-xl"
+            className="w-full lg:w-[87%] 2xl:w-[73%] h-auto rounded-xl"
           />
           <ul className="flex flex-col gap-1 text-[13px] xl:text-[15px] font-normal text-[#595959]">
             <li className="list-disc [text-shadow:_0px_4px_4px_rgba(0_0_0_/_0.25)]">
@@ -84,7 +56,7 @@ const page = () => {
               users/operators to manage and adjust pump settings from anywhere,
               as a result the pump station will run with more efficient water
               usage, and automation resulting in cost savings and improved
-              sustainability. 
+              sustainability. 
             </li>
             <li className="list-disc [text-shadow:_0px_4px_4px_rgba(0_0_0_/_0.25)]">
               Improved safety and security: IoT sensors can detect potential
@@ -106,10 +78,10 @@ const page = () => {
           </ul>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-5 md:gap-x-4 lg:gap-x-6 lg:gap-y-10 justify-items-center lg:justify-items-start mt-8 lg:mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-y-5 md:gap-x-4 lg:gap-x-4 lg:gap-y-10 justify-items-center lg:justify-items-start mt-8 lg:mt-20">
           {PUMP_STATION?.map((service, index) => (
-            <TileCard service={service} index={index}>
-              <img src={service?.img} alt="" className={`w-full h-full `} />
+            <TileCard service={service} index={index} key={index}>
+              <img src={service?.img} alt="" className="w-full h-full" />
             </TileCard>
           ))}
         </div>

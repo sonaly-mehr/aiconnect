@@ -1,15 +1,15 @@
-import TileCard from "@/components/layout/TileCard";
-import { WATER_SOLUTION } from "@/constants";
+import TileCard from "../../components/layout/TileCard";
+import { WATER_SOLUTION } from "../../constants/index";
 import Image from "next/image";
 import React from "react";
 import PortableWaterSolution from "./PortableWaterSolution";
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "../../components/layout/Navbar";
 
 const page = () => {
   return (
     <>
       <Navbar />
-      <div className="container mt-5 lg:mt-16">
+      <div className="container mt-5 lg:mt-16 pb-20">
         <div className="flex items-center relative mt-4 lg:mt-0">
           <div className="lg:mr-[-140px] h-[40px] lg:h-[152px]">
             <Image
@@ -86,7 +86,7 @@ const page = () => {
             </p>
           </div>
         </div>
-
+        <PortableWaterSolution />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-5 md:gap-x-4 lg:gap-x-6 lg:gap-y-10 justify-items-center lg:justify-items-start mt-8 lg:mt-20">
           {WATER_SOLUTION?.map((service, index) => (
             <TileCard service={service} index={index}>
@@ -94,8 +94,6 @@ const page = () => {
             </TileCard>
           ))}
         </div>
-
-        <PortableWaterSolution />
       </div>
     </>
   );

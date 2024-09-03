@@ -1,6 +1,6 @@
-import Navbar from "@/components/layout/Navbar";
-import TileCard from "@/components/layout/TileCard";
-import { OTHER_SOLUTION } from "@/constants";
+import Navbar from "../../components/layout/Navbar";
+import TileCard from "../../components/layout/TileCard";
+import { OTHER_SOLUTION } from "../../constants/index";
 import Image from "next/image";
 import React from "react";
 
