@@ -3,28 +3,28 @@ import { sendEmail } from "../../../utils/mail";
 export async function POST(request) {
   try {
     const formData = await request.formData();
+    console.log('FormData:', formData); // Log the form data
+
     const name = formData.get('name');
     const email = formData.get('email');
     const subject = formData.get('subject');
     const message = formData.get('message');
     const file = formData.get('file');
 
+    console.log('Form Data Extracted:', { name, email, subject, message, file });
+
     const sender = {
-      name:name,
+      name: name,
       address: email,
-      
     };
 
     const receipent = [
       {
-        // name: "Sunny Mangat",
-        // address: "admin@aiconnection.ca",
         name: "Sonaly",
         address: "sonaly.mehr@gmail.com",
       },
     ];
 
-    // Prepare attachments
     const attachments = file ? [{
       filename: file.name,
       content: file.stream(),
@@ -35,8 +35,10 @@ export async function POST(request) {
       receipent,
       subject,
       message,
-      attachments
+      attachments,
     });
+
+    console.log('Email Sent:', result);
 
     return new Response(JSON.stringify({
       accepted: result.accepted,
