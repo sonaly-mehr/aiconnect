@@ -19,8 +19,8 @@ export async function POST(request) {
       {
         // name: "Sunny Mangat",
         // address: "admin@aiconnection.ca",
-        name: "Sunny Mangat",
-        address: "aiconnectbc@gmail.com",
+        name: "Sonaly",
+        address: "sonaly.mehr@gmail.com",
       },
     ];
 

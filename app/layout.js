@@ -5,23 +5,23 @@ import localFont from "next/font/local";
 const geometria = localFont({
   src: [
     {
-      path: "../../public/fonts/Geometria-Light.ttf",
+      path: "../public/fonts/Geometria-Light.ttf",
       weight: "300",
     },
     {
-      path: "../../public/fonts/Geometria.ttf",
+      path: "../public/fonts/Geometria.ttf",
       weight: "400",
     },
     {
-      path: "../../public/fonts/Geometria-Medium.ttf",
+      path: "../public/fonts/Geometria-Medium.ttf",
       weight: "500",
     },
     {
-      path: "../../public/fonts/Geometria-Bold.ttf",
+      path: "../public/fonts/Geometria-Bold.ttf",
       weight: "700",
     },
     {
-      path: "../../public/fonts/Geometria-ExtraBold.ttf",
+      path: "../public/fonts/Geometria-ExtraBold.ttf",
       weight: "800",
     },
   ],
@@ -31,7 +31,7 @@ const geometria = localFont({
 const bowler = localFont({
   src: [
     {
-      path: "../../public/fonts/BOWLER.otf",
+      path: "../public/fonts/BOWLER.otf",
     },
   ],
   variable: "--font-bowler",

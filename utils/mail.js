@@ -2,12 +2,14 @@ import nodemailer from 'nodemailer';
 
 const transport = nodemailer.createTransport({
 
-  host: "smtp.gmail.com", // E.g., 'smtp.gmail.com'
+  host: "sandbox.smtp.mailtrap.io", // E.g., 'smtp.gmail.com'
   port: "587", // E.g., 587 for TLS
   secure: false, // Use TLS in production
     auth: {
-      user: "aiconnectbc@gmail.com", // Your SMTP username
-      pass: "ffmkhwulhhjydtrp", // Your SMTP password
+      // user: "aiconnectbc@gmail.com", // Your SMTP username
+      // pass: "ffmkhwulhhjydtrp", // Your SMTP password
+            user: "ce1ab1cb884bf0", // Your SMTP username
+      pass: "69e56e91853ee2", // Your SMTP password
     },
 });
 
