@@ -37,7 +37,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch("/api/emails", {
+      const response = await fetch("/api/send-mail", {
         method: "POST",
         body: data,
       });
