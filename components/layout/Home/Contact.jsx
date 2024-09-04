@@ -18,6 +18,12 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
+    if (files) {
+      if (files[0].size > 10 * 1024 * 1024) {
+        toast.error("File size exceeds the 10 MB limit.");
+        return;
+      }
+    }
     setFormData((prevData) => ({
       ...prevData,
       [name]: files ? files[0] : value, // Handle file input
