@@ -1,56 +1,62 @@
-'use client'
+"use client";
+
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../../../utils/Motion";
 import React, { useEffect, useRef, useState } from "react";
-import { toast } from "sonner"; // Import Sonner for notifications
+import { toast } from "sonner";
 
 const Contact = () => {
   const myRef = useRef();
-  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-    file: null
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+    file: null, // Add file state
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    setFormData({
-      ...formData,
-      [name]: files ? files[0] : value,
-    });
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: files ? files[0] : value, // Handle file input
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    const data = new FormData();
-    data.append('name', formData.name);
-    data.append('email', formData.email);
-    data.append('subject', formData.subject);
-    data.append('message', formData.message);
+    const formPayload = new FormData();
+    formPayload.append("name", formData.name);
+    formPayload.append("email", formData.email);
+    formPayload.append("subject", formData.subject);
+    formPayload.append("message", formData.message);
     if (formData.file) {
-      data.append('file', formData.file);
+      formPayload.append("file", formData.file); // Append the file if provided
     }
 
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
-        body: data,
+        body: formPayload, // Send the form data as multipart/form-data
       });
 
-      const result = await response.json();
-
       if (response.ok) {
-        toast.success("Email sent successfully!");
+        toast.success("Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+          file: null,
+        });
       } else {
-        toast.error(result.message || "Unable to send email");
+        toast.error("Failed to send message.");
       }
     } catch (error) {
-      toast.error("Unable to send email");
+      toast.error("An error occurred.");
     } finally {
       setLoading(false);
     }
@@ -81,51 +87,51 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                // value={formData.name}
+                value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name"
-                className="input"
                 required
+                className="input"
               />
               <input
                 type="email"
                 name="email"
-                // value={formData.email}
+                value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
-                className="input"
                 required
+                className="input"
               />
               <input
                 type="text"
                 name="subject"
-                // value={formData.subject}
+                value={formData.subject}
                 onChange={handleChange}
                 placeholder="Subject"
-                className="input"
                 required
+                className="input"
               />
               <textarea
                 name="message"
-                rows={4}
-                // value={formData.message}
+                value={formData.message}
                 onChange={handleChange}
                 placeholder="Your Message"
-                className="input"
                 required
+                className="input"
+                rows={4}
               />
               <input
                 type="file"
                 name="file"
-                onChange={handleChange}
+                onChange={handleChange} // Handle file change
                 className="input"
               />
               <button
                 type="submit"
-                className="bg-darkBlue text-white font-geometria font-medium uppercase text-sm lg:text-base px-10 py-2 lg:py-2.5 rounded-lg"
+                className="bg-darkBlue text-white px-4 py-2 rounded"
                 disabled={loading}
               >
-                {loading ? "Sending..." : "Submit"}
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
